@@ -475,11 +475,6 @@
                 return;
             }
 
-            if (!document.getElementById('terminos').checked) {
-                alert('⚠️ Debe aceptar los Términos y Condiciones para continuar.');
-                return;
-            }
-
             // Deshabilitar botón y mostrar loading
             submitBtn.disabled = true;
             loading.classList.add('active');
@@ -501,7 +496,7 @@
                 email: document.getElementById('email').value.trim(),
                 obraSocial: document.getElementById('obraSocial').value.trim(),
                 consentimientoAceptado: true,
-                terminosAceptados: true,
+                consentimientoAceptado: document.getElementById('consentimiento').checked,
                 timestamp: new Date().toISOString(),
                 fechaRegistro: new Date().toLocaleString('es-AR', { timeZone: 'America/Argentina/Buenos_Aires' })
             };
@@ -559,4 +554,5 @@
 </body>
 
 </html>
+
 
