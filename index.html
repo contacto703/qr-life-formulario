@@ -96,6 +96,107 @@
             padding-bottom: 15px;
         }
 
+        /* ESTILOS PARA PANTALLA DE TOKEN */
+        #tokenScreen {
+            display: block;
+        }
+
+        #formScreen {
+            display: none;
+        }
+
+        .token-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .token-input-group {
+            margin: 30px 0;
+        }
+
+        .token-input-group label {
+            display: block;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .token-input-group input {
+            width: 100%;
+            max-width: 400px;
+            padding: 15px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .token-input-group input:focus {
+            outline: none;
+            border-color: #004aad;
+            box-shadow: 0 0 0 3px rgba(0, 74, 173, 0.1);
+        }
+
+        .token-btn {
+            width: 100%;
+            max-width: 400px;
+            padding: 18px;
+            background: #004aad;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .token-btn:hover {
+            background: #003380;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 74, 173, 0.4);
+        }
+
+        .token-btn:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .token-error {
+            color: #ff4444;
+            margin-top: 15px;
+            font-weight: 600;
+            display: none;
+        }
+
+        .token-error.show {
+            display: block;
+        }
+
+        .empresa-info {
+            background: #f0f8ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            border-left: 4px solid #004aad;
+        }
+
+        .empresa-info p {
+            color: #004aad;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 0;
+        }
+
         .form-group {
             margin-bottom: 25px;
         }
@@ -291,139 +392,134 @@
     </div>
 
     <div class="container">
-        <h2 class="form-title">Información del Paciente</h2>
-        
-        <form id="medicalForm">
-            <!-- Nombre y Apellido -->
-            <div class="form-group">
-                <label for="nombreApellido" class="required">Nombre y Apellido</label>
-                <input type="text" id="nombreApellido" name="nombreApellido" required placeholder="Ingrese su nombre y apellido completo">
+        <!-- PANTALLA DE TOKEN -->
+        <div id="tokenScreen">
+            <h2 class="form-title">Acceso al Formulario</h2>
+            <div class="token-container">
+                <div class="token-input-group">
+                    <label for="tokenInput">Código de acceso de su empresa:</label>
+                    <input type="text" id="tokenInput" placeholder="Ejemplo: YPF-8X3K" autocomplete="off">
+                </div>
+                <button type="button" class="token-btn" id="tokenBtn">VERIFICAR ACCESO</button>
+                <div class="token-error" id="tokenError"></div>
+                <div class="loading" id="tokenLoading">⏳ Verificando código...</div>
             </div>
+        </div>
 
-            <!-- DNI -->
-            <div class="form-group">
-                <label for="dni" class="required">DNI</label>
-                <input type="text" id="dni" name="dni" required placeholder="12345678" maxlength="8" pattern="[0-9]{8}">
-                <span class="help-text">Si tu DNI tiene 7 dígitos, anteponé un 0. Ejemplo: 1234567 → 01234567</span>
+        <!-- PANTALLA DEL FORMULARIO (oculta inicialmente) -->
+        <div id="formScreen">
+            <div class="empresa-info" id="empresaInfo">
+                <p>Empresa: <span id="empresaNombre"></span></p>
             </div>
+            
+            <h2 class="form-title">Información del Paciente</h2>
+            
+            <form id="medicalForm">
+                <!-- Nombre y Apellido -->
+                <div class="form-group">
+                    <label for="nombreApellido" class="required">Nombre y Apellido</label>
+                    <input type="text" id="nombreApellido" name="nombreApellido" required placeholder="Ingrese su nombre y apellido completo">
+                </div>
 
-            <!-- Empresa -->
-            <div class="form-group">
-                <label for="empresa" class="required">Empresa, Razón Social o Institución</label>
-                <select id="empresa" name="empresa" required>
-                    <option value="">Seleccione su empresa...</option>
-                    <!-- ========================================== -->
-                    <!-- AGREGAR NUEVAS EMPRESAS AQUÍ ABAJO -->
-                    <!-- Copia y pega esta línea para cada empresa: -->
-                    <!-- <option value="NOMBRE_EMPRESA">NOMBRE_EMPRESA</option> -->
-                    <!-- ========================================== -->
-                    <option value="YPF">YPF</option>
-                    <option value="Pan American Energy">Pan American Energy</option>
-                    <option value="Tecpetrol">Tecpetrol</option>
-                    <option value="Chevron">Chevron</option>
-                    <option value="Shell">Shell</option>
-                    <option value="Vista Oil & Gas">Vista Oil & Gas</option>
-                    <option value="ExxonMobil">ExxonMobil</option>
-                    <option value="Wintershall Dea">Wintershall Dea</option>
-                    <option value="Pampa Energía">Pampa Energía</option>
-                    <option value="Total Austral">Total Austral</option>
-                    <option value="Halliburton">Halliburton</option>
-                    <!-- ========================================== -->
-                    <!-- FIN DE LA LISTA DE EMPRESAS -->
-                    <!-- ========================================== -->
-                </select>
-                <span class="help-text">Si su empresa no aparece en la lista, contacte al administrador</span>
-            </div>
+                <!-- DNI -->
+                <div class="form-group">
+                    <label for="dni" class="required">DNI</label>
+                    <input type="text" id="dni" name="dni" required placeholder="12345678" maxlength="8" pattern="[0-9]{8}">
+                    <span class="help-text">Si tu DNI tiene 7 dígitos, anteponé un 0. Ejemplo: 1234567 → 01234567</span>
+                </div>
 
-            <!-- Enfermedades -->
-            <div class="form-group">
-                <label for="enfermedades" class="required">Enfermedades</label>
-                <textarea id="enfermedades" name="enfermedades" required placeholder='Escriba "NINGUNA" si no tiene enfermedades que informar'></textarea>
-            </div>
+                <!-- Empresa (oculto, ya viene pre-cargado) -->
+                <input type="hidden" id="empresa" name="empresa">
 
-            <!-- Tipo y Factor de Sangre -->
-            <div class="form-group">
-                <label for="tipoSangre" class="required">Tipo y Factor de Sangre</label>
-                <select id="tipoSangre" name="tipoSangre" required>
-                    <option value="">Seleccione su tipo de sangre</option>
-                    <option value="O+">O+</option>
-                    <option value="O-">O-</option>
-                    <option value="A+">A+</option>
-                    <option value="A-">A-</option>
-                    <option value="B+">B+</option>
-                    <option value="B-">B-</option>
-                    <option value="AB+">AB+</option>
-                    <option value="AB-">AB-</option>
-                </select>
-            </div>
+                <!-- Enfermedades -->
+                <div class="form-group">
+                    <label for="enfermedades" class="required">Enfermedades</label>
+                    <textarea id="enfermedades" name="enfermedades" required placeholder='Escriba "NINGUNA" si no tiene enfermedades que informar'></textarea>
+                </div>
 
-            <!-- Alergias -->
-            <div class="form-group">
-                <label for="alergias" class="required">¿Es alérgico/a a algún medicamento, alimento o sustancia?</label>
-                <textarea id="alergias" name="alergias" required placeholder='Escriba "NINGUNA" si no es alérgico, o liste sus alergias (Ej: Penicilina, frutos secos, látex)'></textarea>
-            </div>
+                <!-- Tipo y Factor de Sangre -->
+                <div class="form-group">
+                    <label for="tipoSangre" class="required">Tipo y Factor de Sangre</label>
+                    <select id="tipoSangre" name="tipoSangre" required>
+                        <option value="">Seleccione su tipo de sangre</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                </div>
 
-            <!-- Medicación Regular -->
-            <div class="form-group">
-                <label for="medicacion" class="required">¿Toma medicación de forma regular?</label>
-                <textarea id="medicacion" name="medicacion" required placeholder='Escriba "NINGUNA" si no toma medicación, o indique nombre, dosis y frecuencia'></textarea>
-            </div>
+                <!-- Alergias -->
+                <div class="form-group">
+                    <label for="alergias" class="required">¿Es alérgico/a a algún medicamento, alimento o sustancia?</label>
+                    <textarea id="alergias" name="alergias" required placeholder='Escriba "NINGUNA" si no es alérgico, o liste sus alergias (Ej: Penicilina, frutos secos, látex)'></textarea>
+                </div>
 
-            <!-- Condición Médica Especial -->
-            <div class="form-group">
-                <label for="condicionEspecial" class="required">¿Tiene alguna condición médica que requiera atención especial?</label>
-                <textarea id="condicionEspecial" name="condicionEspecial" required placeholder='Escriba "NINGUNA" si no tiene condiciones especiales, o liste (Ej: marcapasos, epilepsia, diabetes)'></textarea>
-            </div>
+                <!-- Medicación Regular -->
+                <div class="form-group">
+                    <label for="medicacion" class="required">¿Toma medicación de forma regular?</label>
+                    <textarea id="medicacion" name="medicacion" required placeholder='Escriba "NINGUNA" si no toma medicación, o indique nombre, dosis y frecuencia'></textarea>
+                </div>
 
-            <!-- Cirugías e Implantes -->
-            <div class="form-group">
-                <label for="cirugias" class="required">¿Ha tenido cirugías importantes o implantes médicos?</label>
-                <textarea id="cirugias" name="cirugias" required placeholder='Escriba "NINGUNA" si no tuvo cirugías, o liste (Ej: prótesis, bypass, válvula cardíaca)'></textarea>
-            </div>
+                <!-- Condición Médica Especial -->
+                <div class="form-group">
+                    <label for="condicionEspecial" class="required">¿Tiene alguna condición médica que requiera atención especial?</label>
+                    <textarea id="condicionEspecial" name="condicionEspecial" required placeholder='Escriba "NINGUNA" si no tiene condiciones especiales, o liste (Ej: marcapasos, epilepsia, diabetes)'></textarea>
+                </div>
 
-            <!-- Discapacidad -->
-            <div class="form-group">
-                <label for="discapacidad" class="required">¿Tiene alguna discapacidad física, sensorial o cognitiva relevante?</label>
-                <textarea id="discapacidad" name="discapacidad" required placeholder='Escriba "NINGUNA" si no tiene discapacidades, o indique (Ej: movilidad reducida, sordera)'></textarea>
-            </div>
+                <!-- Cirugías e Implantes -->
+                <div class="form-group">
+                    <label for="cirugias" class="required">¿Ha tenido cirugías importantes o implantes médicos?</label>
+                    <textarea id="cirugias" name="cirugias" required placeholder='Escriba "NINGUNA" si no tuvo cirugías, o liste (Ej: prótesis, bypass, válvula cardíaca)'></textarea>
+                </div>
 
-            <!-- Persona de Contacto -->
-            <div class="form-group">
-                <label for="contactoNombre" class="required">Persona de contacto</label>
-                <input type="text" id="contactoNombre" name="contactoNombre" required placeholder="Nombre completo de la persona de contacto">
-            </div>
+                <!-- Discapacidad -->
+                <div class="form-group">
+                    <label for="discapacidad" class="required">¿Tiene alguna discapacidad física, sensorial o cognitiva relevante?</label>
+                    <textarea id="discapacidad" name="discapacidad" required placeholder='Escriba "NINGUNA" si no tiene discapacidades, o indique (Ej: movilidad reducida, sordera)'></textarea>
+                </div>
 
-            <!-- Teléfono de Contacto -->
-            <div class="form-group">
-                <label for="contactoTelefono" class="required">Teléfono de contacto</label>
-                <input type="tel" id="contactoTelefono" name="contactoTelefono" required placeholder="2991234567" pattern="[0-9]{10,15}">
-                <span class="help-text">Ingrese solo números, sin espacios ni guiones. Ejemplo: 2991234567</span>
-            </div>
+                <!-- Persona de Contacto -->
+                <div class="form-group">
+                    <label for="contactoNombre" class="required">Persona de contacto</label>
+                    <input type="text" id="contactoNombre" name="contactoNombre" required placeholder="Nombre completo de la persona de contacto">
+                </div>
 
-            <!-- Email -->
-            <div class="form-group">
-                <label for="email" class="required">Correo Electrónico</label>
-                <input type="email" id="email" name="email" required placeholder="ejemplo@email.com">
-            </div>
+                <!-- Teléfono de Contacto -->
+                <div class="form-group">
+                    <label for="contactoTelefono" class="required">Teléfono de contacto</label>
+                    <input type="tel" id="contactoTelefono" name="contactoTelefono" required placeholder="2991234567" pattern="[0-9]{10,15}">
+                    <span class="help-text">Ingrese solo números, sin espacios ni guiones. Ejemplo: 2991234567</span>
+                </div>
 
-            <!-- Obra Social -->
-            <div class="form-group">
-                <label for="obraSocial" class="required">Obra Social</label>
-                <input type="text" id="obraSocial" name="obraSocial" required placeholder="Nombre de su obra social o prepaga">
-            </div>
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email" class="required">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@email.com">
+                </div>
 
-            <!-- Consentimiento Informado -->
-            <div class="checkbox-group">
-                <label>
-                    <input type="checkbox" id="consentimiento" name="consentimiento" required>
-                    <span>Acepto el Consentimiento Informado. Antes de aceptar, debe leer el documento completo aquí: <a href="https://docs.google.com/document/d/1Y7CmeJEyX-PRJ4E-Q8AZqk_ykB8vnERfJYfc7zZxyLo/edit?tab=t.0" target="_blank">Ver Consentimiento Informado</a> <span style="color: #ff4444; font-weight: bold;">*</span></span>
-                </label>
-            </div>
+                <!-- Obra Social -->
+                <div class="form-group">
+                    <label for="obraSocial" class="required">Obra Social</label>
+                    <input type="text" id="obraSocial" name="obraSocial" required placeholder="Nombre de su obra social o prepaga">
+                </div>
 
+                <!-- Consentimiento Informado -->
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" id="consentimiento" name="consentimiento" required>
+                        <span>Acepto el Consentimiento Informado. Antes de aceptar, debe leer el documento completo aquí: <a href="https://docs.google.com/document/d/1Y7CmeJEyX-PRJ4E-Q8AZqk_ykB8vnERfJYfc7zZxyLo/edit?tab=t.0" target="_blank">Ver Consentimiento Informado</a> <span style="color: #ff4444; font-weight: bold;">*</span></span>
+                    </label>
+                </div>
 
-            <button type="submit" class="submit-btn" id="submitBtn">Enviar Información Médica</button>
-            <div class="loading" id="loading">⏳ Enviando datos de forma segura...</div>
-        </form>
+                <button type="submit" class="submit-btn" id="submitBtn">Enviar Información Médica</button>
+                <div class="loading" id="loading">⏳ Enviando datos de forma segura...</div>
+            </form>
+        </div>
     </div>
 
     <div class="footer">
@@ -431,26 +527,116 @@
     </div>
 
     <script>
-        // URL de tu Google Apps Script - REEMPLAZAR CON TU URL REAL
+        // 🔑 URL de tu Google Apps Script - REEMPLAZAR CON TU URL REAL
         const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby0afjtUYmKS_zjY0sUbqcH0073QPVI-14Od0y0Cmxl4SYSyNAwi946O7mS9EkMokL_/exec';
 
+        // Variables globales
+        let empresaValidada = '';
+        let tokenValidado = '';
+
+        // Referencias a elementos
+        const tokenScreen = document.getElementById('tokenScreen');
+        const formScreen = document.getElementById('formScreen');
+        const tokenInput = document.getElementById('tokenInput');
+        const tokenBtn = document.getElementById('tokenBtn');
+        const tokenError = document.getElementById('tokenError');
+        const tokenLoading = document.getElementById('tokenLoading');
+        const empresaNombre = document.getElementById('empresaNombre');
+        const empresaInput = document.getElementById('empresa');
         const form = document.getElementById('medicalForm');
         const submitBtn = document.getElementById('submitBtn');
         const loading = document.getElementById('loading');
 
+        // 🔐 VALIDAR TOKEN
+        tokenBtn.addEventListener('click', async () => {
+            const token = tokenInput.value.trim().toUpperCase();
+            
+            if (!token) {
+                mostrarError('Por favor, ingrese el código de acceso');
+                return;
+            }
+
+            // Deshabilitar botón y mostrar loading
+            tokenBtn.disabled = true;
+            tokenLoading.classList.add('active');
+            tokenError.classList.remove('show');
+
+            try {
+                // Llamar a Apps Script para validar token
+                const response = await fetch(`${SCRIPT_URL}?action=validarToken&token=${encodeURIComponent(token)}`);
+                const resultado = await response.json();
+
+                tokenLoading.classList.remove('active');
+                tokenBtn.disabled = false;
+
+                if (resultado.valido) {
+                    // Token válido - mostrar formulario
+                    empresaValidada = resultado.empresa;
+                    tokenValidado = token;
+                    
+                    // Guardar en sessionStorage para no perder al recargar
+                    sessionStorage.setItem('qrlife_token', token);
+                    sessionStorage.setItem('qrlife_empresa', empresaValidada);
+                    
+                    mostrarFormulario();
+                } else {
+                    // Token inválido
+                    mostrarError(resultado.mensaje || 'Código de acceso incorrecto');
+                }
+
+            } catch (error) {
+                console.error('Error al validar token:', error);
+                tokenLoading.classList.remove('active');
+                tokenBtn.disabled = false;
+                mostrarError('Error de conexión. Por favor, intente nuevamente.');
+            }
+        });
+
+        // Permitir Enter en el input de token
+        tokenInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                tokenBtn.click();
+            }
+        });
+
+        // Mostrar error de token
+        function mostrarError(mensaje) {
+            tokenError.textContent = mensaje;
+            tokenError.classList.add('show');
+        }
+
+        // Mostrar formulario después de validar token
+        function mostrarFormulario() {
+            tokenScreen.style.display = 'none';
+            formScreen.style.display = 'block';
+            empresaNombre.textContent = empresaValidada;
+            empresaInput.value = empresaValidada;
+        }
+
+        // Verificar si ya hay un token válido en sessionStorage
+        window.addEventListener('load', () => {
+            const tokenGuardado = sessionStorage.getItem('qrlife_token');
+            const empresaGuardada = sessionStorage.getItem('qrlife_empresa');
+            
+            if (tokenGuardado && empresaGuardada) {
+                // Ya hay una sesión válida
+                empresaValidada = empresaGuardada;
+                tokenValidado = tokenGuardado;
+                mostrarFormulario();
+            }
+        });
+
+        // 📋 VALIDACIONES DEL FORMULARIO
+
         // Validación de DNI: auto-completar con 0 si tiene 7 dígitos
         document.getElementById('dni').addEventListener('input', function(e) {
-            // Solo permitir números
             this.value = this.value.replace(/[^0-9]/g, '');
-            
-            // Limitar a 8 dígitos
             if (this.value.length > 8) {
                 this.value = this.value.slice(0, 8);
             }
         });
 
         document.getElementById('dni').addEventListener('blur', function(e) {
-            // Si tiene 7 dígitos, agregar 0 al inicio
             if (this.value.length === 7) {
                 this.value = '0' + this.value;
             }
@@ -458,81 +644,9 @@
 
         // Validación de Teléfono: solo números
         document.getElementById('contactoTelefono').addEventListener('input', function(e) {
-            // Solo permitir números
             this.value = this.value.replace(/[^0-9]/g, '');
-            
-            // Limitar a 15 dígitos
             if (this.value.length > 15) {
                 this.value = this.value.slice(0, 15);
-            }
-        });
-
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-
-            // Verificar checkboxes
-            if (!document.getElementById('consentimiento').checked) {
-                alert('⚠️ Debe aceptar el Consentimiento Informado para continuar.');
-                return;
-            }
-
-            // Deshabilitar botón y mostrar loading
-            submitBtn.disabled = true;
-            loading.classList.add('active');
-
-            // Recopilar datos del formulario
-            const formData = {
-                nombreApellido: document.getElementById('nombreApellido').value.trim(),
-                dni: document.getElementById('dni').value.trim(),
-                empresa: document.getElementById('empresa').value.trim(),
-                enfermedades: document.getElementById('enfermedades').value.trim(),
-                tipoSangre: document.getElementById('tipoSangre').value,
-                alergias: document.getElementById('alergias').value.trim(),
-                medicacion: document.getElementById('medicacion').value.trim(),
-                condicionEspecial: document.getElementById('condicionEspecial').value.trim(),
-                cirugias: document.getElementById('cirugias').value.trim(),
-                discapacidad: document.getElementById('discapacidad').value.trim(),
-                contactoNombre: document.getElementById('contactoNombre').value.trim(),
-                contactoTelefono: document.getElementById('contactoTelefono').value.trim(),
-                email: document.getElementById('email').value.trim(),
-                obraSocial: document.getElementById('obraSocial').value.trim(),
-                consentimientoAceptado: true,
-                consentimientoAceptado: document.getElementById('consentimiento').checked,
-                timestamp: new Date().toISOString(),
-                fechaRegistro: new Date().toLocaleString('es-AR', { timeZone: 'America/Argentina/Buenos_Aires' })
-            };
-
-            try {
-                // Enviar datos a Google Apps Script
-                const response = await fetch(SCRIPT_URL, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formData)
-                });
-
-                // Con mode: 'no-cors', asumimos éxito si no hay error de red
-                loading.classList.remove('active');
-                submitBtn.disabled = false;
-
-                alert('✅ ¡Ficha médica enviada correctamente!\n\n' +
-                      'Sus datos han sido registrados de forma segura en QR Life.\n' +
-                      'En breve recibirá un correo de confirmación con su código QR.');
-                
-                // Limpiar formulario
-                form.reset();
-
-            } catch (error) {
-                console.error('Error:', error);
-                loading.classList.remove('active');
-                submitBtn.disabled = false;
-
-                alert('❌ Error al enviar la ficha médica.\n\n' +
-                      'Por favor, verifique su conexión a internet e intente nuevamente.\n\n' +
-                      'Si el problema persiste, contacte a soporte@qrlife.com.ar\n\n' +
-                      'Error técnico: ' + error.message);
             }
         });
 
@@ -551,10 +665,84 @@
             const numericText = pastedText.replace(/[^0-9]/g, '').slice(0, 15);
             this.value = numericText;
         });
+
+        // 📤 ENVIAR FORMULARIO
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Verificar consentimiento
+            if (!document.getElementById('consentimiento').checked) {
+                alert('⚠️ Debe aceptar el Consentimiento Informado para continuar.');
+                return;
+            }
+
+            // Deshabilitar botón y mostrar loading
+            submitBtn.disabled = true;
+            loading.classList.add('active');
+
+            // Recopilar datos del formulario
+            const formData = {
+                nombreApellido: document.getElementById('nombreApellido').value.trim(),
+                dni: document.getElementById('dni').value.trim(),
+                empresa: empresaValidada, // Empresa validada por token
+                enfermedades: document.getElementById('enfermedades').value.trim(),
+                tipoSangre: document.getElementById('tipoSangre').value,
+                alergias: document.getElementById('alergias').value.trim(),
+                medicacion: document.getElementById('medicacion').value.trim(),
+                condicionEspecial: document.getElementById('condicionEspecial').value.trim(),
+                cirugias: document.getElementById('cirugias').value.trim(),
+                discapacidad: document.getElementById('discapacidad').value.trim(),
+                contactoNombre: document.getElementById('contactoNombre').value.trim(),
+                contactoTelefono: document.getElementById('contactoTelefono').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                obraSocial: document.getElementById('obraSocial').value.trim(),
+                consentimientoAceptado: true,
+                token: tokenValidado, // Incluir token para auditoría
+                timestamp: new Date().toISOString(),
+                fechaRegistro: new Date().toLocaleString('es-AR', { timeZone: 'America/Argentina/Buenos_Aires' })
+            };
+
+            try {
+                // Enviar datos a Google Apps Script
+                const response = await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                loading.classList.remove('active');
+                submitBtn.disabled = false;
+
+                alert('✅ ¡Ficha médica enviada correctamente!\n\n' +
+                      'Sus datos han sido registrados de forma segura en QR Life.\n' +
+                      'En breve recibirá un correo de confirmación con su código QR.');
+                
+                // Limpiar formulario
+                form.reset();
+                
+                // Limpiar sesión para forzar nueva validación de token
+                sessionStorage.removeItem('qrlife_token');
+                sessionStorage.removeItem('qrlife_empresa');
+                
+                // Volver a pantalla de token
+                formScreen.style.display = 'none';
+                tokenScreen.style.display = 'block';
+                tokenInput.value = '';
+
+            } catch (error) {
+                console.error('Error:', error);
+                loading.classList.remove('active');
+                submitBtn.disabled = false;
+
+                alert('❌ Error al enviar la ficha médica.\n\n' +
+                      'Por favor, verifique su conexión a internet e intente nuevamente.\n\n' +
+                      'Si el problema persiste, contacte a soporte@qrlife.com.ar\n\n' +
+                      'Error técnico: ' + error.message);
+            }
+        });
     </script>
 </body>
-
 </html>
-
-
-
