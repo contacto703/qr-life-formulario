@@ -415,10 +415,11 @@
             <h2 class="form-title">Información del Paciente</h2>
             
             <form id="medicalForm">
-                <!-- Nombre y Apellido -->
+                <!-- Nombre y Apellido - MODIFICADO CON maxlength="16" -->
                 <div class="form-group">
                     <label for="nombreApellido" class="required">Nombre y Apellido</label>
-                    <input type="text" id="nombreApellido" name="nombreApellido" required placeholder="Ingrese su nombre y apellido completo">
+                    <input type="text" id="nombreApellido" name="nombreApellido" required placeholder="Ingrese su nombre y apellido completo" maxlength="16">
+                    <span class="help-text">Máximo 16 caracteres</span>
                 </div>
 
                 <!-- DNI -->
@@ -746,7 +747,3 @@
     </script>
 </body>
 </html>
-
-
-
-
