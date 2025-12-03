@@ -432,6 +432,56 @@
                 <!-- Empresa (oculto, ya viene pre-cargado) -->
                 <input type="hidden" id="empresa" name="empresa">
 
+                <!-- Fecha de Nacimiento -->
+        <div class="form-group">
+            <label for="fechaNacimiento" class="required">Fecha de Nacimiento</label>
+            <input 
+                type="date" 
+                id="fechaNacimiento" 
+                name="fechaNacimiento" 
+                required
+            >
+            <small style="display: block; color: #666; font-size: 0.9em; margin-top: 5px;">
+                Se calculará automáticamente su edad al momento del escaneo del QR
+            </small>
+        </div>
+
+        <!-- Peso -->
+        <div class="form-group">
+            <label for="peso" class="required">Peso (kg)</label>
+            <input 
+                type="number" 
+                id="peso" 
+                name="peso" 
+                min="30" 
+                max="300" 
+                step="0.1" 
+                required 
+                placeholder="Ejemplo: 75.5"
+            >
+            <small style="display: block; color: #666; font-size: 0.9em; margin-top: 5px;">
+                Ingrese su peso en kilogramos
+            </small>
+        </div>
+
+        <!-- Altura -->
+        <div class="form-group">
+            <label for="altura" class="required">Altura (cm)</label>
+            <input 
+                type="number" 
+                id="altura" 
+                name="altura" 
+                min="100" 
+                max="250" 
+                step="1" 
+                required 
+                placeholder="Ejemplo: 175"
+            >
+            <small style="display: block; color: #666; font-size: 0.9em; margin-top: 5px;">
+                Ingrese su altura en centímetros
+            </small>
+        </div>
+
                 <!-- Enfermedades -->
                 <div class="form-group">
                     <label for="enfermedades" class="required">Enfermedades</label>
@@ -747,4 +797,5 @@
     </script>
 </body>
 </html>
+
 
