@@ -732,26 +732,29 @@
             loading.classList.add('active');
 
             // Recopilar datos del formulario
-            const formData = {
-                nombreApellido: document.getElementById('nombreApellido').value.trim(),
-                dni: document.getElementById('dni').value.trim(),
-                empresa: empresaValidada, // Empresa validada por token
-                enfermedades: document.getElementById('enfermedades').value.trim(),
-                tipoSangre: document.getElementById('tipoSangre').value,
-                alergias: document.getElementById('alergias').value.trim(),
-                medicacion: document.getElementById('medicacion').value.trim(),
-                condicionEspecial: document.getElementById('condicionEspecial').value.trim(),
-                cirugias: document.getElementById('cirugias').value.trim(),
-                discapacidad: document.getElementById('discapacidad').value.trim(),
-                contactoNombre: document.getElementById('contactoNombre').value.trim(),
-                contactoTelefono: document.getElementById('contactoTelefono').value.trim(),
-                email: document.getElementById('email').value.trim(),
-                obraSocial: document.getElementById('obraSocial').value.trim(),
-                consentimientoAceptado: true,
-                token: tokenValidado, // Incluir token para auditoría
-                timestamp: new Date().toISOString(),
-                fechaRegistro: new Date().toLocaleString('es-AR', { timeZone: 'America/Argentina/Buenos_Aires' })
-            };
+const formData = {
+    nombreApellido: document.getElementById('nombreApellido').value.trim(),
+    dni: document.getElementById('dni').value.trim(),
+    empresa: empresaValidada, // Empresa validada por token
+    fechaNacimiento: document.getElementById('fechaNacimiento').value,  // ← AGREGAR
+    peso: document.getElementById('peso').value,                        // ← AGREGAR
+    altura: document.getElementById('altura').value,                    // ← AGREGAR
+    enfermedades: document.getElementById('enfermedades').value.trim(),
+    tipoSangre: document.getElementById('tipoSangre').value,
+    alergias: document.getElementById('alergias').value.trim(),
+    medicacion: document.getElementById('medicacion').value.trim(),
+    condicionEspecial: document.getElementById('condicionEspecial').value.trim(),
+    cirugias: document.getElementById('cirugias').value.trim(),
+    discapacidad: document.getElementById('discapacidad').value.trim(),
+    contactoNombre: document.getElementById('contactoNombre').value.trim(),
+    contactoTelefono: document.getElementById('contactoTelefono').value.trim(),
+    email: document.getElementById('email').value.trim(),
+    obraSocial: document.getElementById('obraSocial').value.trim(),
+    consentimientoAceptado: true,
+    token: tokenValidado, // Incluir token para auditoría
+    timestamp: new Date().toISOString(),
+    fechaRegistro: new Date().toLocaleString('es-AR', { timeZone: 'America/Argentina/Buenos_Aires' })
+};
 
             try {
                 // Enviar datos a Google Apps Script
@@ -797,5 +800,6 @@
     </script>
 </body>
 </html>
+
 
 
