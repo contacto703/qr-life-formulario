@@ -432,19 +432,20 @@
                 <!-- Empresa (oculto, ya viene pre-cargado) -->
                 <input type="hidden" id="empresa" name="empresa">
 
-                <!-- Fecha de Nacimiento -->
-        <div class="form-group">
-            <label for="fechaNacimiento" class="required">Fecha de Nacimiento</label>
-            <input 
-                type="date" 
-                id="fechaNacimiento" 
-                name="fechaNacimiento" 
-                required
-            >
-            <small style="display: block; color: #666; font-size: 0.9em; margin-top: 5px;">
-                Se calculará automáticamente su edad al momento del escaneo del QR
-            </small>
-        </div>
+               <!-- Fecha de Nacimiento -->
+<div class="form-group">
+    <label for="fechaNacimiento" class="required">Fecha de Nacimiento</label>
+    <input 
+        type="date" 
+        id="fechaNacimiento" 
+        name="fechaNacimiento" 
+        min="1900-01-01"
+        required
+    >
+    <small style="display: block; color: #666; font-size: 0.9em; margin-top: 5px;">
+        Ingrese una fecha válida (entre 1900 y hoy)
+    </small>
+</div>
 
         <!-- Peso -->
         <div class="form-group">
@@ -800,6 +801,7 @@ const formData = {
     </script>
 </body>
 </html>
+
 
 
 
