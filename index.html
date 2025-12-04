@@ -811,50 +811,75 @@ const formData = {
     fechaRegistro: new Date().toLocaleString('es-AR', { timeZone: 'America/Argentina/Buenos_Aires' })
 };
 
-            try {
-                // Enviar datos a Google Apps Script
-                const response = await fetch(SCRIPT_URL, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formData)
-                });
+            
+       try {
+    // Enviar datos a Google Apps Script
+    const response = await fetch(SCRIPT_URL, {
+        method: 'POST',
+        // NO incluir mode: 'no-cors' para poder leer la respuesta
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+    });
 
-                loading.classList.remove('active');
-                submitBtn.disabled = false;
+    const resultado = await response.json();
+    
+    loading.classList.remove('active');
+    submitBtn.disabled = false;
 
-                alert('✅ ¡Ficha médica enviada correctamente!\n\n' +
-                      'Sus datos han sido registrados de forma segura en QR Life.\n' +
-                      'En breve recibirá un correo de confirmación.');
-                
-                // Limpiar formulario
-                form.reset();
-                
-                // Limpiar sesión para forzar nueva validación de token
-                sessionStorage.removeItem('qrlife_token');
-                sessionStorage.removeItem('qrlife_empresa');
-                
-                // Volver a pantalla de token
-                formScreen.style.display = 'none';
-                tokenScreen.style.display = 'block';
-                tokenInput.value = '';
+    // Manejar error de DNI duplicado en otra empresa
+    if (resultado.result === 'error' && resultado.message === 'DNI_EN_OTRA_EMPRESA') {
+        alert('⚠️ DNI YA REGISTRADO EN OTRA EMPRESA\n\n' +
+              'Este DNI ya está registrado en: ' + resultado.empresaExistente + '\n\n' +
+              'Un empleado no puede estar registrado en múltiples empresas al mismo tiempo.\n\n' +
+              'Si cambió de empresa, contacte al administrador para actualizar su registro.');
+        return;
+    }
 
-            } catch (error) {
-                console.error('Error:', error);
-                loading.classList.remove('active');
-                submitBtn.disabled = false;
+    // Manejar otros errores
+    if (resultado.result === 'error') {
+        alert('❌ Error al enviar la ficha médica.\n\n' + 
+              (resultado.message || 'Error desconocido') + '\n\n' +
+              'Si el problema persiste, contacte a soporte@qrlife.com.ar');
+        return;
+    }
 
-                alert('❌ Error al enviar la ficha médica.\n\n' +
-                      'Por favor, verifique su conexión a internet e intente nuevamente.\n\n' +
-                      'Si el problema persiste, contacte a soporte@qrlife.com.ar\n\n' +
-                      'Error técnico: ' + error.message);
-            }
+    // Éxito
+    if (resultado.result === 'success') {
+        alert('✅ ¡Ficha médica enviada correctamente!\n\n' +
+              'Sus datos han sido registrados de forma segura en QR Life.\n' +
+              'En breve recibirá un correo de confirmación.');
+        
+        // Limpiar formulario
+        form.reset();
+        
+        // Limpiar sesión para forzar nueva validación de token
+        sessionStorage.removeItem('qrlife_token');
+        sessionStorage.removeItem('qrlife_empresa');
+        
+        // Volver a pantalla de token
+        formScreen.style.display = 'none';
+        tokenScreen.style.display = 'block';
+        tokenInput.value = '';
+    } else {
+        throw new Error('Respuesta inesperada del servidor');
+    }
+
+} catch (error) {
+    console.error('Error:', error);
+    loading.classList.remove('active');
+    submitBtn.disabled = false;
+
+    alert('❌ Error al enviar la ficha médica.\n\n' +
+          'Por favor, verifique su conexión a internet e intente nuevamente.\n\n' +
+          'Error técnico: ' + error.message);
+} 
         });
     </script>
 </body>
 </html>
+
 
 
 
