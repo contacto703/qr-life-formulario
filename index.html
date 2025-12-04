@@ -816,7 +816,7 @@ const formData = {
     // Enviar datos a Google Apps Script
     const response = await fetch(SCRIPT_URL, {
         method: 'POST',
-        // NO incluir mode: 'no-cors' para poder leer la respuesta
+        mode: 'no-cors',
         headers: {
             'Content-Type': 'application/json',
         },
@@ -879,6 +879,7 @@ const formData = {
     </script>
 </body>
 </html>
+
 
 
 
