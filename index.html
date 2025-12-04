@@ -866,19 +866,20 @@ const formData = {
         throw new Error('Respuesta inesperada del servidor');
     }
 
-} catch (error) {
-    console.error('Error:', error);
-    loading.classList.remove('active');
-    submitBtn.disabled = false;
+    } catch (error) {
+        console.error('Error:', error);
+        loading.classList.remove('active');
+        submitBtn.disabled = false;
 
-    alert('❌ Error al enviar la ficha médica.\n\n' +
-          'Por favor, verifique su conexión a internet e intente nuevamente.\n\n' +
-          'Error técnico: ' + error.message);
-}
-        });             
+        alert('❌ Error al enviar la ficha médica.\n\n' +
+              'Por favor, verifique su conexión a internet e intente nuevamente.\n\n' +
+              'Error técnico: ' + error.message);
+    }
+});             
     </script>
 </body>
 </html>
+
 
 
 
