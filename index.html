@@ -710,6 +710,24 @@
             this.value = numericText;
         });
 
+        // ========================================
+        // VALIDACIÓN DE FECHA DE NACIMIENTO
+        // ========================================
+
+        // Establecer fecha máxima como HOY
+        document.addEventListener('DOMContentLoaded', function() {
+            var hoy = new Date();
+            var año = hoy.getFullYear();
+            var mes = String(hoy.getMonth() + 1).padStart(2, '0');
+            var dia = String(hoy.getDate()).padStart(2, '0');
+            var fechaMax = año + '-' + mes + '-' + dia;
+    
+            var inputFecha = document.getElementById('fechaNacimiento');
+            if (inputFecha) {
+                inputFecha.setAttribute('max', fechaMax);
+            }
+        });
+        
         // Prevenir pegado de texto no numérico en Teléfono
         document.getElementById('contactoTelefono').addEventListener('paste', function(e) {
             e.preventDefault();
@@ -718,9 +736,45 @@
             this.value = numericText;
         });
 
-        // 📤 ENVIAR FORMULARIO
         form.addEventListener('submit', async (e) => {
-            e.preventDefault();
+    e.preventDefault();
+
+    // ========================================
+    // VALIDAR FECHA DE NACIMIENTO
+    // ========================================
+    const fechaNacInput = document.getElementById('fechaNacimiento');
+    if (fechaNacInput && fechaNacInput.value) {
+        const fechaNac = new Date(fechaNacInput.value);
+        const hoy = new Date();
+        
+        // Calcular edad
+        let edad = hoy.getFullYear() - fechaNac.getFullYear();
+        const mes = hoy.getMonth() - fechaNac.getMonth();
+        if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNac.getDate())) {
+            edad--;
+        }
+        
+        // Validaciones
+        if (fechaNac > hoy) {
+            alert('⚠️ ERROR: Fecha de nacimiento inválida\n\nLa fecha de nacimiento no puede ser posterior a hoy.');
+            return;
+        }
+        
+        if (edad < 0) {
+            alert('⚠️ ERROR: Fecha de nacimiento inválida\n\nLa fecha ingresada es en el futuro.');
+            return;
+        }
+        
+        if (edad > 120) {
+            alert('⚠️ ERROR: Fecha de nacimiento inválida\n\nLa edad calculada excede los 120 años. Por favor, verifique la fecha ingresada.');
+            return;
+        }
+        
+        if (fechaNac.getFullYear() < 1900) {
+            alert('⚠️ ERROR: Fecha de nacimiento inválida\n\nLa fecha debe ser posterior al año 1900.');
+            return;
+        }
+    }
 
             // Verificar consentimiento
             if (!document.getElementById('consentimiento').checked) {
@@ -801,6 +855,7 @@ const formData = {
     </script>
 </body>
 </html>
+
 
 
 
