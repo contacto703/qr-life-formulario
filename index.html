@@ -812,15 +812,20 @@ const formData = {
 };
 
             
-      try {
+     // 1. Convertir el objeto de datos a formato URL-encoded
+const params = new URLSearchParams();
+for (const key in formData) {
+    params.append(key, formData[key]);
+}
+
+try {
     const response = await fetch(SCRIPT_URL, {
         method: 'POST',
-        mode: 'no-cors',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
+        // ❌ No se define Content-Type explícitamente, o se define como 
+        // 'application/x-www-form-urlencoded' (es el predeterminado para URLSearchParams)
+        body: params.toString() // ✅ Envía los datos como un formulario simple (clave=valor&...)
     });
+    // ...
 
     loading.classList.remove('active');
     submitBtn.disabled = false;
@@ -849,6 +854,7 @@ const formData = {
     </script>
 </body>
 </html>
+
 
 
 
