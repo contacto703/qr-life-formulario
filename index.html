@@ -594,9 +594,6 @@
                         tokenValidado = token;
                         
                         // Si viene del panel, precargamos DNI y Nombre del usuario registrado
-                        document.getElementById('dni').value = resultado.dni || '';
-                        document.getElementById('nombreApellido').value = resultado.nombre || '';
-                        document.getElementById('email').value = resultado.email || '';
                         document.getElementById('dni').readOnly = true; // Bloquear DNI
                         document.getElementById('nombreApellido').readOnly = true; // Bloquear Nombre
                     } else {
@@ -845,4 +842,5 @@
     </script>
 </body>
 </html>
+
 
