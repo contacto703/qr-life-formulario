@@ -110,14 +110,6 @@
             margin: 30px 0;
         }
 
-        .token-input-group label {
-            display: block;
-            color: #333;
-            font-weight: 600;
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-
         .token-input-group input {
             width: 100%;
             max-width: 400px;
@@ -131,7 +123,7 @@
             font-weight: bold;
             transition: all 0.3s ease;
         }
-
+        /* ... (Resto de estilos) ... */
         .token-input-group input:focus {
             outline: none;
             border-color: #004aad;
@@ -554,6 +546,33 @@
         const loading = document.getElementById('loading');
 
         // ========================================
+        // 🔥 FUNCIÓN PARA PRECARGAR DATOS DESDE APPS SCRIPT
+        // ========================================
+        async function precargarDatosUsuario(token) {
+            const action = 'obtener_datos_usuario';
+            const fullUrl = `${SCRIPT_URL}?action=${action}&token=${token}`;
+
+            try {
+                const response = await fetch(fullUrl, { method: 'GET' });
+                const data = await response.json();
+
+                if (data.success) {
+                    // Precargar campos con los datos del registro
+                    document.getElementById('nombreApellido').value = data.nombre || '';
+                    document.getElementById('dni').value = data.dni || '';
+                    document.getElementById('email').value = data.email || '';
+                    
+                    // Actualizar variable global de empresa
+                    empresaValidada = data.empresa || empresaValidada;
+                } else {
+                    console.error('Error al obtener datos de usuario:', data.error);
+                }
+            } catch (error) {
+                console.error('Error de fetch al precargar:', error);
+            }
+        }
+
+        // ========================================
         // 🔥 FUNCIÓN DE VALIDACIÓN PRINCIPAL (UNIFICADA)
         // ========================================
         async function validarYMostrarFormulario(token, esTokenSesion = false) {
@@ -589,13 +608,9 @@
                     
                     // Si es Token de Sesión (Viene del panel):
                     if (esTokenSesion) {
-                        // El resultado de 'obtener_datos_usuario' trae DNI, Empresa, etc.
-                        empresaValidada = resultado.empresa; 
+                        // Llamamos a la precarga para llenar los campos (desbloqueados)
+                        await precargarDatosUsuario(token); 
                         tokenValidado = token;
-                        
-                        // Si viene del panel, precargamos DNI y Nombre del usuario registrado
-                        document.getElementById('dni').readOnly = true; // Bloquear DNI
-                        document.getElementById('nombreApellido').readOnly = true; // Bloquear Nombre
                     } else {
                         // Si es Código de Empresa (Ruta original, 'validarToken'):
                         if (!resultado.valido) {
@@ -631,7 +646,7 @@
         // 1. Carga Inicial: Verificar si hay Token de Sesión en el URL
         window.addEventListener('load', () => {
             const urlParams = new URLSearchParams(window.location.search);
-            const panelToken = urlParams.get('token'); 
+            const panelToken = urlParams.get('token');
             
             // 🔥 BYPASS LÓGICO: Si el URL tiene un token (viene del panel)
             if (panelToken) {
@@ -648,6 +663,8 @@
                 // Ya hay una sesión válida de empresa guardada
                 empresaValidada = empresaGuardada;
                 tokenValidado = tokenGuardado;
+                // Si recarga, intenta precargar de nuevo
+                precargarDatosUsuario(tokenGuardado); 
                 mostrarFormulario();
             }
             // Si no hay nada, la pantalla de tokenScreen (código de empresa) permanece visible.
@@ -842,5 +859,3 @@
     </script>
 </body>
 </html>
-
-
