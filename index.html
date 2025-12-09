@@ -98,11 +98,13 @@
 
         /* ESTILOS PARA PANTALLA DE TOKEN */
         #tokenScreen {
-            display: block;
+            /* Por defecto, es visible */
+            display: block; 
         }
 
         #formScreen {
-            display: none;
+            /* Por defecto, está oculto */
+            display: none; 
         }
 
         .token-container {
@@ -196,7 +198,7 @@
             font-size: 16px;
             margin: 0;
         }
-
+        
         .form-group {
             margin-bottom: 25px;
         }
@@ -222,6 +224,8 @@
         .form-group input[type="text"],
         .form-group input[type="email"],
         .form-group input[type="tel"],
+        .form-group input[type="date"],
+        .form-group input[type="number"],
         .form-group select,
         .form-group textarea {
             width: 100%;
@@ -392,7 +396,6 @@
     </div>
 
     <div class="container">
-        <!-- PANTALLA DE TOKEN -->
         <div id="tokenScreen">
             <h2 class="form-title">Acceso al Formulario</h2>
             <div class="token-container">
@@ -406,7 +409,6 @@
             </div>
         </div>
 
-        <!-- PANTALLA DEL FORMULARIO (oculta inicialmente) -->
         <div id="formScreen">
             <div class="empresa-info" id="empresaInfo">
                 <p>Empresa: <span id="empresaNombre"></span></p>
@@ -415,81 +417,49 @@
             <h2 class="form-title">Información del Paciente</h2>
             
             <form id="medicalForm">
-                <!-- Nombre y Apellido - MODIFICADO CON maxlength="16" -->
                 <div class="form-group">
                     <label for="nombreApellido" class="required">Nombre y Apellido</label>
                     <input type="text" id="nombreApellido" name="nombreApellido" required placeholder="Ingrese su nombre y apellido completo" maxlength="20">
                     <span class="help-text">Máximo 20 caracteres</span>
                 </div>
 
-                <!-- DNI -->
                 <div class="form-group">
                     <label for="dni" class="required">DNI</label>
                     <input type="text" id="dni" name="dni" required placeholder="12345678" maxlength="8" pattern="[0-9]{8}">
                     <span class="help-text">Si tu DNI tiene 7 dígitos, anteponé un 0. Ejemplo: 1234567 → 01234567</span>
                 </div>
 
-                <!-- Empresa (oculto, ya viene pre-cargado) -->
                 <input type="hidden" id="empresa" name="empresa">
 
-               <!-- Fecha de Nacimiento -->
-<div class="form-group">
-    <label for="fechaNacimiento" class="required">Fecha de Nacimiento</label>
-    <input 
-        type="date" 
-        id="fechaNacimiento" 
-        name="fechaNacimiento" 
-        min="1900-01-01"
-        required
-    >
-    <small style="display: block; color: #666; font-size: 0.9em; margin-top: 5px;">
-        Ingrese una fecha válida (entre 1900 y hoy)
-    </small>
-</div>
+                <div class="form-group">
+                    <label for="fechaNacimiento" class="required">Fecha de Nacimiento</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" min="1900-01-01" required>
+                    <small style="display: block; color: #666; font-size: 0.9em; margin-top: 5px;">
+                        Ingrese una fecha válida (entre 1900 y hoy)
+                    </small>
+                </div>
 
-        <!-- Peso -->
-        <div class="form-group">
-            <label for="peso" class="required">Peso (kg)</label>
-            <input 
-                type="number" 
-                id="peso" 
-                name="peso" 
-                min="30" 
-                max="300" 
-                step="0.1" 
-                required 
-                placeholder="Ejemplo: 75.5"
-            >
-            <small style="display: block; color: #666; font-size: 0.9em; margin-top: 5px;">
-                Ingrese su peso en kilogramos
-            </small>
-        </div>
+                <div class="form-group">
+                    <label for="peso" class="required">Peso (kg)</label>
+                    <input type="number" id="peso" name="peso" min="30" max="300" step="0.1" required placeholder="Ejemplo: 75.5">
+                    <small style="display: block; color: #666; font-size: 0.9em; margin-top: 5px;">
+                        Ingrese su peso en kilogramos
+                    </small>
+                </div>
 
-        <!-- Altura -->
-        <div class="form-group">
-            <label for="altura" class="required">Altura (cm)</label>
-            <input 
-                type="number" 
-                id="altura" 
-                name="altura" 
-                min="100" 
-                max="250" 
-                step="1" 
-                required 
-                placeholder="Ejemplo: 175"
-            >
-            <small style="display: block; color: #666; font-size: 0.9em; margin-top: 5px;">
-                Ingrese su altura en centímetros
-            </small>
-        </div>
+                <div class="form-group">
+                    <label for="altura" class="required">Altura (cm)</label>
+                    <input type="number" id="altura" name="altura" min="100" max="250" step="1" required placeholder="Ejemplo: 175">
+                    <small style="display: block; color: #666; font-size: 0.9em; margin-top: 5px;">
+                        Ingrese su altura en centímetros
+                    </small>
+                </div>
 
-                <!-- Enfermedades -->
                 <div class="form-group">
                     <label for="enfermedades" class="required">Enfermedades</label>
                     <textarea id="enfermedades" name="enfermedades" required placeholder='Escriba "NINGUNA" si no tiene enfermedades que informar'></textarea>
                 </div>
 
-                <!-- Tipo y Factor de Sangre -->
                 <div class="form-group">
                     <label for="tipoSangre" class="required">Tipo y Factor de Sangre</label>
                     <select id="tipoSangre" name="tipoSangre" required>
@@ -505,62 +475,52 @@
                     </select>
                 </div>
 
-                <!-- Alergias -->
                 <div class="form-group">
                     <label for="alergias" class="required">¿Es alérgico/a a algún medicamento, alimento o sustancia?</label>
                     <textarea id="alergias" name="alergias" required placeholder='Escriba "NINGUNA" si no es alérgico, o liste sus alergias (Ej: Penicilina, frutos secos, látex)'></textarea>
                 </div>
 
-                <!-- Medicación Regular -->
                 <div class="form-group">
                     <label for="medicacion" class="required">¿Toma medicación de forma regular?</label>
                     <textarea id="medicacion" name="medicacion" required placeholder='Escriba "NINGUNA" si no toma medicación, o indique nombre, dosis y frecuencia'></textarea>
                 </div>
 
-                <!-- Condición Médica Especial -->
                 <div class="form-group">
                     <label for="condicionEspecial" class="required">¿Tiene alguna condición médica que requiera atención especial?</label>
                     <textarea id="condicionEspecial" name="condicionEspecial" required placeholder='Escriba "NINGUNA" si no tiene condiciones especiales, o liste (Ej: marcapasos, epilepsia, diabetes)'></textarea>
                 </div>
 
-                <!-- Cirugías e Implantes -->
                 <div class="form-group">
                     <label for="cirugias" class="required">¿Ha tenido cirugías importantes o implantes médicos?</label>
                     <textarea id="cirugias" name="cirugias" required placeholder='Escriba "NINGUNA" si no tuvo cirugías, o liste (Ej: prótesis, bypass, válvula cardíaca)'></textarea>
                 </div>
 
-                <!-- Discapacidad -->
                 <div class="form-group">
                     <label for="discapacidad" class="required">¿Tiene alguna discapacidad física, sensorial o cognitiva relevante?</label>
                     <textarea id="discapacidad" name="discapacidad" required placeholder='Escriba "NINGUNA" si no tiene discapacidades, o indique (Ej: movilidad reducida, sordera)'></textarea>
                 </div>
 
-                <!-- Persona de Contacto -->
                 <div class="form-group">
                     <label for="contactoNombre" class="required">Persona de contacto</label>
                     <input type="text" id="contactoNombre" name="contactoNombre" required placeholder="Nombre completo de la persona de contacto">
                 </div>
 
-                <!-- Teléfono de Contacto -->
                 <div class="form-group">
                     <label for="contactoTelefono" class="required">Teléfono de contacto</label>
                     <input type="tel" id="contactoTelefono" name="contactoTelefono" required placeholder="2991234567" pattern="[0-9]{10,15}">
                     <span class="help-text">Ingrese solo números, sin espacios ni guiones. Ejemplo: 2991234567</span>
                 </div>
 
-                <!-- Email -->
                 <div class="form-group">
                     <label for="email" class="required">Correo Electrónico</label>
                     <input type="email" id="email" name="email" required placeholder="ejemplo@email.com">
                 </div>
 
-                <!-- Obra Social -->
                 <div class="form-group">
                     <label for="obraSocial" class="required">Obra Social</label>
                     <input type="text" id="obraSocial" name="obraSocial" required placeholder="Nombre de su obra social o prepaga">
                 </div>
 
-                <!-- Consentimiento Informado -->
                 <div class="checkbox-group">
                     <label>
                         <input type="checkbox" id="consentimiento" name="consentimiento" required>
@@ -580,11 +540,11 @@
 
     <script>
         // 🔑 URL de tu Google Apps Script - REEMPLAZAR CON TU URL REAL
-        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwPMvPHQQHEOKyeDYgfgUkiT7UqR1A3JtJy3a9EBeKAfWGkP_fhPmHvraYZgF1L-iXv/exec';
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw4BtDzAWa27XDcqvEXGJdBQwrT4AikCCCsNm0HSRoNdypiXm-e-xLrtdITWKifFMvJ/exec';
 
         // Variables globales
         let empresaValidada = '';
-        let tokenValidado = '';
+        let tokenValidado = ''; // Esto puede ser el Token de Empresa o el Token de Sesión
 
         // Referencias a elementos
         const tokenScreen = document.getElementById('tokenScreen');
@@ -599,9 +559,11 @@
         const submitBtn = document.getElementById('submitBtn');
         const loading = document.getElementById('loading');
 
-        // 🔐 VALIDAR TOKEN
-        tokenBtn.addEventListener('click', async () => {
-            const token = tokenInput.value.trim().toUpperCase();
+        // ========================================
+        // 🔥 FUNCIÓN DE VALIDACIÓN PRINCIPAL (UNIFICADA)
+        // ========================================
+        async function validarYMostrarFormulario(token, esTokenSesion = false) {
+            tokenInput.value = token; // Mostrar token en el input si es Sesión
             
             if (!token) {
                 mostrarError('Por favor, ingrese el código de acceso');
@@ -613,27 +575,54 @@
             tokenLoading.classList.add('active');
             tokenError.classList.remove('show');
 
+            let action = 'validarToken';
+            
+            // Si es Token de Sesión (Viene del panel), usamos la acción para obtener info del usuario.
+            if (esTokenSesion) {
+                action = 'obtener_datos_usuario'; 
+            }
+
             try {
-                // Llamar a Apps Script para validar token
-                const response = await fetch(`${SCRIPT_URL}?action=validarToken&token=${encodeURIComponent(token)}`);
+                let apiUrl = `${SCRIPT_URL}?action=${action}&token=${encodeURIComponent(token)}`;
+                
+                const response = await fetch(apiUrl);
                 const resultado = await response.json();
 
                 tokenLoading.classList.remove('active');
                 tokenBtn.disabled = false;
 
-                if (resultado.valido) {
-                    // Token válido - mostrar formulario
-                    empresaValidada = resultado.empresa;
-                    tokenValidado = token;
+                if (resultado.success) { 
                     
-                    // Guardar en sessionStorage para no perder al recargar
+                    // Si es Token de Sesión (Viene del panel):
+                    if (esTokenSesion) {
+                        // El resultado de 'obtener_datos_usuario' trae DNI, Empresa, etc.
+                        empresaValidada = resultado.empresa; 
+                        tokenValidado = token;
+                        
+                        // Si viene del panel, precargamos DNI y Nombre del usuario registrado
+                        document.getElementById('dni').value = resultado.dni || '';
+                        document.getElementById('nombreApellido').value = resultado.nombre || '';
+                        document.getElementById('email').value = resultado.email || '';
+                        document.getElementById('dni').readOnly = true; // Bloquear DNI
+                        document.getElementById('nombreApellido').readOnly = true; // Bloquear Nombre
+                    } else {
+                        // Si es Código de Empresa (Ruta original, 'validarToken'):
+                        if (!resultado.valido) {
+                            mostrarError(resultado.mensaje || 'Código de acceso incorrecto');
+                            return;
+                        }
+                        empresaValidada = resultado.empresa;
+                        tokenValidado = token;
+                    }
+
+                    // ÉXITO: Guardar, Mostrar y Continuar
                     sessionStorage.setItem('qrlife_token', token);
                     sessionStorage.setItem('qrlife_empresa', empresaValidada);
-                    
                     mostrarFormulario();
+                    
                 } else {
-                    // Token inválido
-                    mostrarError(resultado.mensaje || 'Código de acceso incorrecto');
+                    // Falla la validación (Token de empresa inválido o Token de Sesión expirado)
+                    mostrarError(resultado.error || resultado.mensaje || 'Código de acceso o sesión inválida');
                 }
 
             } catch (error) {
@@ -642,22 +631,52 @@
                 tokenBtn.disabled = false;
                 mostrarError('Error de conexión. Por favor, intente nuevamente.');
             }
-        });
+        }
 
-        // Permitir Enter en el input de token
-        tokenInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                tokenBtn.click();
+        // ========================================
+        // 🔄 MANEJO DE EVENTOS Y CARGA INICIAL
+        // ========================================
+
+        // 1. Carga Inicial: Verificar si hay Token de Sesión en el URL
+        window.addEventListener('load', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const panelToken = urlParams.get('token'); 
+            
+            // 🔥 BYPASS LÓGICO: Si el URL tiene un token (viene del panel)
+            if (panelToken) {
+                // Ejecutamos la validación directamente con el token del panel
+                validarYMostrarFormulario(panelToken, true); // true = es Token de Sesión
+                return; // Salimos de la función de carga inicial
             }
+
+            // 2. Si no hay token en el URL, verificamos el sessionStorage (para recargas)
+            const tokenGuardado = sessionStorage.getItem('qrlife_token');
+            const empresaGuardada = sessionStorage.getItem('qrlife_empresa');
+            
+            if (tokenGuardado && empresaGuardada) {
+                // Ya hay una sesión válida de empresa guardada
+                empresaValidada = empresaGuardada;
+                tokenValidado = tokenGuardado;
+                mostrarFormulario();
+            }
+            // Si no hay nada, la pantalla de tokenScreen (código de empresa) permanece visible.
         });
 
-        // Mostrar error de token
+        // 3. Botón de Verificación de Código de Empresa (Ruta original)
+        tokenBtn.addEventListener('click', () => {
+            validarYMostrarFormulario(tokenInput.value.trim().toUpperCase(), false); // false = es Código de Empresa
+        });
+
+
+        // ========================================
+        // 📄 FUNCIONES AUXILIARES (Mostrar/Ocultar)
+        // ========================================
+
         function mostrarError(mensaje) {
             tokenError.textContent = mensaje;
             tokenError.classList.add('show');
         }
 
-        // Mostrar formulario después de validar token
         function mostrarFormulario() {
             tokenScreen.style.display = 'none';
             formScreen.style.display = 'block';
@@ -665,20 +684,7 @@
             empresaInput.value = empresaValidada;
         }
 
-        // Verificar si ya hay un token válido en sessionStorage
-        window.addEventListener('load', () => {
-            const tokenGuardado = sessionStorage.getItem('qrlife_token');
-            const empresaGuardada = sessionStorage.getItem('qrlife_empresa');
-            
-            if (tokenGuardado && empresaGuardada) {
-                // Ya hay una sesión válida
-                empresaValidada = empresaGuardada;
-                tokenValidado = tokenGuardado;
-                mostrarFormulario();
-            }
-        });
-
-        // 📋 VALIDACIONES DEL FORMULARIO
+        // 📋 VALIDACIONES DEL FORMULARIO (Mantenemos tu código)
 
         // Validación de DNI: auto-completar con 0 si tiene 7 dígitos
         document.getElementById('dni').addEventListener('input', function(e) {
@@ -702,6 +708,20 @@
             }
         });
 
+        // Validación de Fecha de Nacimiento
+        document.addEventListener('DOMContentLoaded', function() {
+            var hoy = new Date();
+            var año = hoy.getFullYear();
+            var mes = String(hoy.getMonth() + 1).padStart(2, '0');
+            var dia = String(hoy.getDate()).padStart(2, '0');
+            var fechaMax = año + '-' + mes + '-' + dia;
+            
+            var inputFecha = document.getElementById('fechaNacimiento');
+            if (inputFecha) {
+                inputFecha.setAttribute('max', fechaMax);
+            }
+        });
+        
         // Prevenir pegado de texto no numérico en DNI
         document.getElementById('dni').addEventListener('paste', function(e) {
             e.preventDefault();
@@ -710,24 +730,6 @@
             this.value = numericText;
         });
 
-        // ========================================
-        // VALIDACIÓN DE FECHA DE NACIMIENTO
-        // ========================================
-
-        // Establecer fecha máxima como HOY
-        document.addEventListener('DOMContentLoaded', function() {
-            var hoy = new Date();
-            var año = hoy.getFullYear();
-            var mes = String(hoy.getMonth() + 1).padStart(2, '0');
-            var dia = String(hoy.getDate()).padStart(2, '0');
-            var fechaMax = año + '-' + mes + '-' + dia;
-    
-            var inputFecha = document.getElementById('fechaNacimiento');
-            if (inputFecha) {
-                inputFecha.setAttribute('max', fechaMax);
-            }
-        });
-        
         // Prevenir pegado de texto no numérico en Teléfono
         document.getElementById('contactoTelefono').addEventListener('paste', function(e) {
             e.preventDefault();
@@ -736,134 +738,116 @@
             this.value = numericText;
         });
 
+        // ========================================
+        // ENVÍO DEL FORMULARIO (submit)
+        // ========================================
         form.addEventListener('submit', async (e) => {
-    e.preventDefault();
+            e.preventDefault();
 
-    // ========================================
-    // VALIDAR FECHA DE NACIMIENTO
-    // ========================================
-    const fechaNacInput = document.getElementById('fechaNacimiento');
-    if (fechaNacInput && fechaNacInput.value) {
-        const fechaNac = new Date(fechaNacInput.value);
-        const hoy = new Date();
-        
-        // Calcular edad
-        let edad = hoy.getFullYear() - fechaNac.getFullYear();
-        const mes = hoy.getMonth() - fechaNac.getMonth();
-        if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNac.getDate())) {
-            edad--;
-        }
-        
-        // Validaciones
-        if (fechaNac > hoy) {
-            alert('⚠️ ERROR: Fecha de nacimiento inválida\n\nLa fecha de nacimiento no puede ser posterior a hoy.');
-            return;
-        }
-        
-        if (edad < 0) {
-            alert('⚠️ ERROR: Fecha de nacimiento inválida\n\nLa fecha ingresada es en el futuro.');
-            return;
-        }
-        
-        if (edad > 120) {
-            alert('⚠️ ERROR: Fecha de nacimiento inválida\n\nLa edad calculada excede los 120 años. Por favor, verifique la fecha ingresada.');
-            return;
-        }
-        
-        if (fechaNac.getFullYear() < 1900) {
-            alert('⚠️ ERROR: Fecha de nacimiento inválida\n\nLa fecha debe ser posterior al año 1900.');
-            return;
-        }
-    }
+            // 1. VALIDAR FECHA DE NACIMIENTO
+            const fechaNacInput = document.getElementById('fechaNacimiento');
+            if (fechaNacInput && fechaNacInput.value) {
+                const fechaNac = new Date(fechaNacInput.value);
+                const hoy = new Date();
+                
+                // Calcular edad
+                let edad = hoy.getFullYear() - fechaNac.getFullYear();
+                const mes = hoy.getMonth() - fechaNac.getMonth();
+                if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNac.getDate())) {
+                    edad--;
+                }
+                
+                // Validaciones
+                if (fechaNac > hoy) {
+                    alert('⚠️ ERROR: Fecha de nacimiento inválida\n\nLa fecha de nacimiento no puede ser posterior a hoy.');
+                    return;
+                }
+                
+                if (edad < 0 || edad > 120 || fechaNac.getFullYear() < 1900) {
+                    alert('⚠️ ERROR: Fecha de nacimiento inválida\n\nPor favor, verifique la fecha ingresada.');
+                    return;
+                }
+            }
 
-            // Verificar consentimiento
+            // 2. Verificar consentimiento
             if (!document.getElementById('consentimiento').checked) {
                 alert('⚠️ Debe aceptar el Consentimiento Informado para continuar.');
                 return;
             }
 
-            // Deshabilitar botón y mostrar loading
+            // 3. Deshabilitar botón y mostrar loading
             submitBtn.disabled = true;
             loading.classList.add('active');
 
-            // Recopilar datos del formulario
-const formData = {
-    nombreApellido: document.getElementById('nombreApellido').value.trim(),
-    dni: document.getElementById('dni').value.trim(),
-    empresa: empresaValidada, // Empresa validada por token
-    fechaNacimiento: document.getElementById('fechaNacimiento').value,  // ← AGREGAR
-    peso: document.getElementById('peso').value,                        // ← AGREGAR
-    altura: document.getElementById('altura').value,                    // ← AGREGAR
-    enfermedades: document.getElementById('enfermedades').value.trim(),
-    tipoSangre: document.getElementById('tipoSangre').value,
-    alergias: document.getElementById('alergias').value.trim(),
-    medicacion: document.getElementById('medicacion').value.trim(),
-    condicionEspecial: document.getElementById('condicionEspecial').value.trim(),
-    cirugias: document.getElementById('cirugias').value.trim(),
-    discapacidad: document.getElementById('discapacidad').value.trim(),
-    contactoNombre: document.getElementById('contactoNombre').value.trim(),
-    contactoTelefono: document.getElementById('contactoTelefono').value.trim(),
-    email: document.getElementById('email').value.trim(),
-    obraSocial: document.getElementById('obraSocial').value.trim(),
-    consentimientoAceptado: true,
-    token: tokenValidado, // Incluir token para auditoría
-    timestamp: new Date().toISOString(),
-    fechaRegistro: new Date().toLocaleString('es-AR', { timeZone: 'America/Argentina/Buenos_Aires' })
-};
+            // 4. Recopilar datos del formulario
+            const formData = {
+                action: 'formulario_medico_nuevo', // Añadimos una acción específica si se necesita en Apps Script
+                nombreApellido: document.getElementById('nombreApellido').value.trim(),
+                dni: document.getElementById('dni').value.trim(),
+                empresa: empresaValidada, // Empresa validada por token
+                fechaNacimiento: document.getElementById('fechaNacimiento').value,
+                peso: document.getElementById('peso').value,
+                altura: document.getElementById('altura').value,
+                enfermedades: document.getElementById('enfermedades').value.trim(),
+                tipoSangre: document.getElementById('tipoSangre').value,
+                alergias: document.getElementById('alergias').value.trim(),
+                medicacion: document.getElementById('medicacion').value.trim(),
+                condicionEspecial: document.getElementById('condicionEspecial').value.trim(),
+                cirugias: document.getElementById('cirugias').value.trim(),
+                discapacidad: document.getElementById('discapacidad').value.trim(),
+                contactoNombre: document.getElementById('contactoNombre').value.trim(),
+                contactoTelefono: document.getElementById('contactoTelefono').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                obraSocial: document.getElementById('obraSocial').value.trim(),
+                consentimientoAceptado: true,
+                token: tokenValidado, // Token de Empresa o Token de Sesión
+                timestamp: new Date().toISOString()
+            };
 
+            // 5. Enviar datos
+            const params = new URLSearchParams();
+            for (const key in formData) {
+                params.append(key, formData[key]);
+            }
             
-     // 1. Convertir el objeto de datos a formato URL-encoded
-const params = new URLSearchParams();
-for (const key in formData) {
-    params.append(key, formData[key]);
-}
+            try {
+                // Usamos fetch con POST para enviar al Apps Script
+                const response = await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded', // Necesario para Apps Script con URLSearchParams
+                    },
+                    body: params.toString() 
+                });
 
-try {
-    const response = await fetch(SCRIPT_URL, {
-        method: 'POST',
-        // ❌ No se define Content-Type explícitamente, o se define como 
-        // 'application/x-www-form-urlencoded' (es el predeterminado para URLSearchParams)
-        body: params.toString() // ✅ Envía los datos como un formulario simple (clave=valor&...)
-    });
-    // ...
+                // Apps Script debe devolver un JSON { success: true/false }
+                const result = await response.json(); 
 
-    loading.classList.remove('active');
-    submitBtn.disabled = false;
+                loading.classList.remove('active');
+                submitBtn.disabled = false;
 
-    alert('✅ ¡Ficha médica enviada correctamente!\n\n' +
-          'Sus datos han sido registrados de forma segura en QR Life.\n' +
-          'En breve recibirá un correo de confirmación.');
-    
-    form.reset();
-    sessionStorage.removeItem('qrlife_token');
-    sessionStorage.removeItem('qrlife_empresa');
-    formScreen.style.display = 'none';
-    tokenScreen.style.display = 'block';
-    tokenInput.value = ''; 
+                if (result.success) {
+                    alert('✅ ¡Ficha médica enviada correctamente!\n\n' +
+                          'Sus datos han sido registrados de forma segura.\n' +
+                          'Será redirigido al panel en breve.');
+                    
+                    // Limpiar sesión y redirigir al panel
+                    sessionStorage.removeItem('qrlife_token');
+                    sessionStorage.removeItem('qrlife_empresa');
+                    window.location.href = 'https://qrlife.com.ar/panel.html';
+                } else {
+                     alert('❌ Error en el servidor: ' + (result.error || 'Intente de nuevo.'));
+                }
 
-    } catch (error) {
-        console.error('Error:', error);
-        loading.classList.remove('active');
-        submitBtn.disabled = false;
 
-        alert('❌ Error al enviar la ficha médica.\n\n' +
-              'Por favor, verifique su conexión a internet e intente nuevamente.\n\n' +
-              'Error técnico: ' + error.message);
-    }
-});             
+            } catch (error) {
+                console.error('Error:', error);
+                loading.classList.remove('active');
+                submitBtn.disabled = false;
+
+                alert('❌ Error al enviar la ficha médica. Error de conexión.');
+            }
+        });
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
