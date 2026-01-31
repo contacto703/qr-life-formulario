@@ -815,62 +815,51 @@
             };
 
             // 5. Capturar IP antes de enviar
-            try {
-                const ipResponse = await fetch('https://api.ipify.org?format=json');
-                const ipData = await ipResponse.json();
-                formData.ipUsuario = ipData.ip;
-           } catch (ipError) {
-               console.log('No se pudo capturar IP:', ipError);
-               formData.ipUsuario = 'No disponible';
-           }
+try {
+    const ipResponse = await fetch('https://api.ipify.org?format=json');
+    const ipData = await ipResponse.json();
+    formData.ipUsuario = ipData.ip;
+} catch (ipError) {
+    console.log('No se pudo capturar IP:', ipError);
+    formData.ipUsuario = 'No disponible';
+}
 
-           // 6. Enviar datos
-          const params = new URLSearchParams();
-          for (const key in formData) {
-              params.append(key, formData[key]);
-          }
+// 6. Enviar datos
+const params = new URLSearchParams();
+for (const key in formData) {
+    params.append(key, formData[key]);
+}
 
-          try {
-              // Usamos fetch con POST para enviar al Apps Script
-              const response = await fetch(SCRIPT_URL, {
-                  method: 'POST',
-                  headers: {
-                      'Content-Type': 'application/x-www-form-urlencoded',
-                  },
-                  body: params.toString() 
-              });
+try {
+    // Enviar con no-cors para Apps Script
+    await fetch(SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: params
+    });
 
-                // Apps Script debe devolver un JSON { success: true/false }
-                const result = await response.json(); 
+    loading.classList.remove('active');
+    submitBtn.disabled = false;
+    
+    alert('✅ ¡Ficha médica enviada correctamente!\n\n' +
+          'Sus datos han sido registrados de forma segura.\n' +
+          'Será redirigido al panel en breve.');
+    
+    sessionStorage.removeItem('qrlife_token');
+    sessionStorage.removeItem('qrlife_empresa');
+    window.location.href = 'https://qrlife.com.ar/panel.html';
 
-                loading.classList.remove('active');
-                submitBtn.disabled = false;
-
-                if (result.success) {
-                    alert('✅ ¡Ficha médica enviada correctamente!\n\n' +
-                          'Sus datos han sido registrados de forma segura.\n' +
-                          'Será redirigido al panel en breve.');
-                    
-                    // Limpiar sesión y redirigir al panel
-                    sessionStorage.removeItem('qrlife_token');
-                    sessionStorage.removeItem('qrlife_empresa');
-                    window.location.href = 'https://qrlife.com.ar/panel.html';
-                } else {
-                     alert('❌ Error en el servidor: ' + (result.error || 'Intente de nuevo.'));
-                }
-
-
-            } catch (error) {
-                console.error('Error:', error);
-                loading.classList.remove('active');
-                submitBtn.disabled = false;
-
-                alert('❌ Error al enviar la ficha médica. Error de conexión.');
-            }
+} catch (error) {
+    console.error('Error:', error);
+    loading.classList.remove('active');
+    submitBtn.disabled = false;
+    alert('❌ Error al enviar la ficha médica. Error de conexión.');
+}
         });
     </script>
 </body>
 </html>
+
 
 
 
