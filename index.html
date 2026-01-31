@@ -810,23 +810,35 @@
                 consentimientoAceptado: true,
                 token: tokenValidado, // Token de Empresa o Token de Sesión
                 timestamp: new Date().toISOString()
+                navegador: navigator.userAgent,
+                ipUsuario: 'Capturando...' // Se actualizará después
             };
 
-            // 5. Enviar datos
-            const params = new URLSearchParams();
-            for (const key in formData) {
-                params.append(key, formData[key]);
-            }
-            
+            // 5. Capturar IP antes de enviar
             try {
-                // Usamos fetch con POST para enviar al Apps Script
-                const response = await fetch(SCRIPT_URL, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded', // Necesario para Apps Script con URLSearchParams
-                    },
-                    body: params.toString() 
-                });
+                const ipResponse = await fetch('https://api.ipify.org?format=json');
+                const ipData = await ipResponse.json();
+                formData.ipUsuario = ipData.ip;
+           } catch (ipError) {
+               console.log('No se pudo capturar IP:', ipError);
+               formData.ipUsuario = 'No disponible';
+           }
+
+           // 6. Enviar datos
+          const params = new URLSearchParams();
+          for (const key in formData) {
+              params.append(key, formData[key]);
+          }
+
+          try {
+              // Usamos fetch con POST para enviar al Apps Script
+              const response = await fetch(SCRIPT_URL, {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/x-www-form-urlencoded',
+                  },
+                  body: params.toString() 
+              });
 
                 // Apps Script debe devolver un JSON { success: true/false }
                 const result = await response.json(); 
@@ -859,5 +871,6 @@
     </script>
 </body>
 </html>
+
 
 
