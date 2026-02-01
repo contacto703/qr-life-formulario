@@ -96,9 +96,8 @@
             padding-bottom: 15px;
         }
 
-        /* ESTILOS PARA PANTALLA DE TOKEN */
         #tokenScreen, #formScreen {
-            display: none; /* Ambas están ocultas por defecto */
+            display: none;
         }
 
         .token-container {
@@ -123,7 +122,7 @@
             font-weight: bold;
             transition: all 0.3s ease;
         }
-        /* ... (Resto de estilos) ... */
+
         .token-input-group input:focus {
             outline: none;
             border-color: #004aad;
@@ -521,18 +520,15 @@
     </div>
 
     <div class="footer">
-        © 2025 QR Life - Tu información médica siempre contigo
+        © 2026 QR Life - Tu información médica siempre contigo
     </div>
 
     <script>
-        // 🔑 URL de tu Google Apps Script - REEMPLAZAR CON TU URL REAL
         const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec';
 
-        // Variables globales
         let empresaValidada = '';
-        let tokenValidado = ''; // Esto puede ser el Token de Empresa o el Token de Sesión
+        let tokenValidado = '';
 
-        // Referencias a elementos
         const tokenScreen = document.getElementById('tokenScreen');
         const formScreen = document.getElementById('formScreen');
         const tokenInput = document.getElementById('tokenInput');
@@ -545,9 +541,6 @@
         const submitBtn = document.getElementById('submitBtn');
         const loading = document.getElementById('loading');
 
-        // ========================================
-        // 🔥 FUNCIÓN PARA PRECARGAR DATOS DESDE APPS SCRIPT
-        // ========================================
         async function precargarDatosUsuario(token) {
             const action = 'obtener_datos_usuario';
             const fullUrl = `${SCRIPT_URL}?action=${action}&token=${token}`;
@@ -557,12 +550,9 @@
                 const data = await response.json();
 
                 if (data.success) {
-                    // Precargar campos con los datos del registro
                     document.getElementById('nombreApellido').value = data.nombre || '';
                     document.getElementById('dni').value = data.dni || '';
                     document.getElementById('email').value = data.email || '';
-                    
-                    // Actualizar variable global de empresa
                     empresaValidada = data.empresa || empresaValidada;
                 } else {
                     console.error('Error al obtener datos de usuario:', data.error);
@@ -572,25 +562,20 @@
             }
         }
 
-        // ========================================
-        // 🔥 FUNCIÓN DE VALIDACIÓN PRINCIPAL (UNIFICADA)
-        // ========================================
         async function validarYMostrarFormulario(token, esTokenSesion = false) {
-            tokenInput.value = token; // Mostrar token en el input si es Sesión
+            tokenInput.value = token;
             
             if (!token) {
                 mostrarError('Por favor, ingrese el código de acceso');
                 return;
             }
 
-            // Deshabilitar botón y mostrar loading
             tokenBtn.disabled = true;
             tokenLoading.classList.add('active');
             tokenError.classList.remove('show');
 
             let action = 'validarToken';
             
-            // Si es Token de Sesión (Viene del panel), usamos la acción para obtener info del usuario.
             if (esTokenSesion) {
                 action = 'obtener_datos_usuario'; 
             }
@@ -606,13 +591,10 @@
 
                 if (resultado.success) { 
                     
-                    // Si es Token de Sesión (Viene del panel):
                     if (esTokenSesion) {
-                        // Llamamos a la precarga para llenar los campos (desbloqueados)
                         await precargarDatosUsuario(token); 
                         tokenValidado = token;
                     } else {
-                        // Si es Código de Empresa (Ruta original, 'validarToken'):
                         if (!resultado.valido) {
                             mostrarError(resultado.mensaje || 'Código de acceso incorrecto');
                             return;
@@ -621,13 +603,11 @@
                         tokenValidado = token;
                     }
 
-                    // ÉXITO: Guardar, Mostrar y Continuar
                     sessionStorage.setItem('qrlife_token', token);
                     sessionStorage.setItem('qrlife_empresa', empresaValidada);
                     mostrarFormulario();
                     
                 } else {
-                    // Falla la validación (Token de empresa inválido o Token de Sesión expirado)
                     mostrarError(resultado.error || resultado.mensaje || 'Código de acceso o sesión inválida');
                 }
 
@@ -639,46 +619,29 @@
             }
         }
 
-        // ========================================
-        // 🔄 MANEJO DE EVENTOS Y CARGA INICIAL
-        // ========================================
-
-        // 1. Carga Inicial: Verificar si hay Token de Sesión en el URL
         window.addEventListener('load', () => {
             const urlParams = new URLSearchParams(window.location.search);
             const panelToken = urlParams.get('token');
             
-            // 🔥 BYPASS LÓGICO: Si el URL tiene un token (viene del panel)
             if (panelToken) {
-                // Ejecutamos la validación directamente con el token del panel
-                validarYMostrarFormulario(panelToken, true); // true = es Token de Sesión
-                return; // Salimos de la función de carga inicial
+                validarYMostrarFormulario(panelToken, true);
+                return;
             }
 
-            // 2. Si no hay token en el URL, verificamos el sessionStorage (para recargas)
             const tokenGuardado = sessionStorage.getItem('qrlife_token');
             const empresaGuardada = sessionStorage.getItem('qrlife_empresa');
             
             if (tokenGuardado && empresaGuardada) {
-                // Ya hay una sesión válida de empresa guardada
                 empresaValidada = empresaGuardada;
                 tokenValidado = tokenGuardado;
-                // Si recarga, intenta precargar de nuevo
                 precargarDatosUsuario(tokenGuardado); 
                 mostrarFormulario();
             }
-            // Si no hay nada, la pantalla de tokenScreen (código de empresa) permanece visible.
         });
 
-        // 3. Botón de Verificación de Código de Empresa (Ruta original)
         tokenBtn.addEventListener('click', () => {
-            validarYMostrarFormulario(tokenInput.value.trim().toUpperCase(), false); // false = es Código de Empresa
+            validarYMostrarFormulario(tokenInput.value.trim().toUpperCase(), false);
         });
-
-
-        // ========================================
-        // 📄 FUNCIONES AUXILIARES (Mostrar/Ocultar)
-        // ========================================
 
         function mostrarError(mensaje) {
             tokenError.textContent = mensaje;
@@ -692,9 +655,6 @@
             empresaInput.value = empresaValidada;
         }
 
-        // 📋 VALIDACIONES DEL FORMULARIO (Mantenemos tu código)
-
-        // Validación de DNI: auto-completar con 0 si tiene 7 dígitos
         document.getElementById('dni').addEventListener('input', function(e) {
             this.value = this.value.replace(/[^0-9]/g, '');
             if (this.value.length > 8) {
@@ -708,7 +668,6 @@
             }
         });
 
-        // Validación de Teléfono: solo números
         document.getElementById('contactoTelefono').addEventListener('input', function(e) {
             this.value = this.value.replace(/[^0-9]/g, '');
             if (this.value.length > 15) {
@@ -716,7 +675,6 @@
             }
         });
 
-        // Validación de Fecha de Nacimiento
         document.addEventListener('DOMContentLoaded', function() {
             var hoy = new Date();
             var año = hoy.getFullYear();
@@ -730,7 +688,6 @@
             }
         });
         
-        // Prevenir pegado de texto no numérico en DNI
         document.getElementById('dni').addEventListener('paste', function(e) {
             e.preventDefault();
             const pastedText = (e.clipboardData || window.clipboardData).getData('text');
@@ -738,7 +695,6 @@
             this.value = numericText;
         });
 
-        // Prevenir pegado de texto no numérico en Teléfono
         document.getElementById('contactoTelefono').addEventListener('paste', function(e) {
             e.preventDefault();
             const pastedText = (e.clipboardData || window.clipboardData).getData('text');
@@ -746,26 +702,20 @@
             this.value = numericText;
         });
 
-        // ========================================
-        // ENVÍO DEL FORMULARIO (submit)
-        // ========================================
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
 
-            // 1. VALIDAR FECHA DE NACIMIENTO
             const fechaNacInput = document.getElementById('fechaNacimiento');
             if (fechaNacInput && fechaNacInput.value) {
                 const fechaNac = new Date(fechaNacInput.value);
                 const hoy = new Date();
                 
-                // Calcular edad
                 let edad = hoy.getFullYear() - fechaNac.getFullYear();
                 const mes = hoy.getMonth() - fechaNac.getMonth();
                 if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNac.getDate())) {
                     edad--;
                 }
                 
-                // Validaciones
                 if (fechaNac > hoy) {
                     alert('⚠️ ERROR: Fecha de nacimiento inválida\n\nLa fecha de nacimiento no puede ser posterior a hoy.');
                     return;
@@ -777,22 +727,33 @@
                 }
             }
 
-            // 2. Verificar consentimiento
             if (!document.getElementById('consentimiento').checked) {
                 alert('⚠️ Debe aceptar el Consentimiento Informado para continuar.');
                 return;
             }
 
-            // 3. Deshabilitar botón y mostrar loading
             submitBtn.disabled = true;
             loading.classList.add('active');
 
-            // 4. Recopilar datos del formulario
+            // 🔥 CAPTURAR IP Y NAVEGADOR PRIMERO
+            let ipCapturada = 'No disponible';
+            let navegadorCapturado = navigator.userAgent;
+
+            try {
+                const ipResponse = await fetch('https://api.ipify.org?format=json');
+                const ipData = await ipResponse.json();
+                ipCapturada = ipData.ip;
+                console.log('✅ IP capturada:', ipCapturada);
+            } catch (ipError) {
+                console.log('❌ No se pudo capturar IP:', ipError);
+            }
+
+            // 🔥 AHORA SÍ crear formData con los valores ya capturados
             const formData = {
-                action: 'formulario_medico_nuevo', // Añadimos una acción específica si se necesita en Apps Script
+                action: 'formulario_medico_nuevo',
                 nombreApellido: document.getElementById('nombreApellido').value.trim(),
                 dni: document.getElementById('dni').value.trim(),
-                empresa: empresaValidada, // Empresa validada por token
+                empresa: empresaValidada,
                 fechaNacimiento: document.getElementById('fechaNacimiento').value,
                 peso: document.getElementById('peso').value,
                 altura: document.getElementById('altura').value,
@@ -808,67 +769,55 @@
                 email: document.getElementById('email').value.trim(),
                 obraSocial: document.getElementById('obraSocial').value.trim(),
                 consentimientoAceptado: true,
-                token: tokenValidado, // Token de Empresa o Token de Sesión
+                token: tokenValidado,
                 timestamp: new Date().toISOString(),
-                navegador: navigator.userAgent,
-                ipUsuario: 'Capturando...' // Se actualizará después
+                navegador: navegadorCapturado,
+                ipUsuario: ipCapturada
             };
 
-            // 5. Capturar IP antes de enviar
-try {
-    const ipResponse = await fetch('https://api.ipify.org?format=json');
-    const ipData = await ipResponse.json();
-    formData.ipUsuario = ipData.ip;
-} catch (ipError) {
-    console.log('No se pudo capturar IP:', ipError);
-    formData.ipUsuario = 'No disponible';
-}
+            console.log('🔍 DATOS FINALES:', {
+                navegador: formData.navegador,
+                ipUsuario: formData.ipUsuario
+            });
 
-// 6. Enviar datos
-const params = new URLSearchParams();
-for (const key in formData) {
-    params.append(key, formData[key]);
-}
+            const params = new URLSearchParams();
+            for (const key in formData) {
+                params.append(key, formData[key]);
+            }
 
-try {
-    const response = await fetch(SCRIPT_URL, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: params.toString() 
-    });
+            try {
+                const response = await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: params.toString() 
+                });
 
-    const result = await response.json(); 
+                const result = await response.json(); 
 
-    loading.classList.remove('active');
-    submitBtn.disabled = false;
+                loading.classList.remove('active');
+                submitBtn.disabled = false;
 
-    if (result.success) {
-        alert('✅ ¡Ficha médica enviada correctamente!\n\n' +
-              'Sus datos han sido registrados de forma segura.\n' +
-              'Será redirigido al panel en breve.');
-        
-        sessionStorage.removeItem('qrlife_token');
-        sessionStorage.removeItem('qrlife_empresa');
-        window.location.href = 'https://qrlife.com.ar/panel.html';
-    } else {
-         alert('❌ Error en el servidor: ' + (result.error || 'Intente de nuevo.'));
-    }
+                if (result.success) {
+                    alert('✅ ¡Ficha médica enviada correctamente!\n\n' +
+                          'Sus datos han sido registrados de forma segura.\n' +
+                          'Será redirigido al panel en breve.');
+                    
+                    sessionStorage.removeItem('qrlife_token');
+                    sessionStorage.removeItem('qrlife_empresa');
+                    window.location.href = 'https://qrlife.com.ar/panel.html';
+                } else {
+                     alert('❌ Error en el servidor: ' + (result.error || 'Intente de nuevo.'));
+                }
 
-} catch (error) {
-    console.error('Error:', error);
-    loading.classList.remove('active');
-    submitBtn.disabled = false;
-    alert('❌ Error al enviar la ficha médica. Error de conexión.');
-}
+            } catch (error) {
+                console.error('Error:', error);
+                loading.classList.remove('active');
+                submitBtn.disabled = false;
+                alert('❌ Error al enviar la ficha médica. Error de conexión.');
+            }
         });
     </script>
 </body>
 </html>
-
-
-
-
-
-
