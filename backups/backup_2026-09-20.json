@@ -1,0 +1,3617 @@
+{
+  "documents": [
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/11111111",
+      "fields": {
+        "factorSanguineo": {
+          "stringValue": "+"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "obraSocial": {
+          "stringValue": ""
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-09-15T00:32:53.204Z"
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=11111111&v=1"
+        },
+        "alergias": {
+          "stringValue": ""
+        },
+        "email": {
+          "stringValue": "test1@test.com"
+        },
+        "telefonoEmergencia": {
+          "stringValue": ""
+        },
+        "empresa": {
+          "stringValue": "EMPRESA TEST A"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "condicionMedica": {
+          "stringValue": ""
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "estadoProceso": {
+          "stringValue": "PENDIENTE"
+        },
+        "contactoEmergencia": {
+          "stringValue": ""
+        },
+        "fechaNacimiento": {
+          "stringValue": ""
+        },
+        "nombreCompleto": {
+          "stringValue": "Empleado Test 1"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "dni": {
+          "stringValue": "11111111"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=11111111&v=1"
+        },
+        "peso": {
+          "stringValue": ""
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "altura": {
+          "stringValue": ""
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "cirugias": {
+          "stringValue": ""
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-09-15T00:32:53.204Z"
+        },
+        "enfermedades": {
+          "stringValue": ""
+        },
+        "grupoSanguineo": {
+          "stringValue": "0"
+        },
+        "emailEnviado": {
+          "stringValue": ""
+        },
+        "discapacidad": {
+          "stringValue": ""
+        },
+        "medicacion": {
+          "stringValue": ""
+        }
+      },
+      "createTime": "2026-09-14T23:30:02.303400Z",
+      "updateTime": "2026-09-15T00:32:53.642084Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/14648700",
+      "fields": {
+        "enlaceQRDinamico": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=14648700&v=1"
+        },
+        "discapacidad": {
+          "stringValue": "NINGUNA"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-03-06T12:55:48.210Z"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "emailEnviado": {
+          "stringValue": "2026-03-06T12:55:35.673Z"
+        },
+        "altura": {
+          "stringValue": "156"
+        },
+        "enfermedades": {
+          "stringValue": "NINGUNA"
+        },
+        "nombreCompleto": {
+          "stringValue": "DIEGUITO NQN"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "enlaceQR": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=14648700&v=1"
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "qrId": {
+          "stringValue": "018b6645-301d-4ea9-bfd9-68be7b27deb8"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2994523793"
+        },
+        "grupoSanguineo": {
+          "stringValue": "O"
+        },
+        "alergias": {
+          "stringValue": "NINGUNA"
+        },
+        "fechaNacimiento": {
+          "stringValue": "Thu Sep 10 1981 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "medicacion": {
+          "stringValue": "NINGUNA"
+        },
+        "condicionMedica": {
+          "stringValue": "NINGUNA"
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "contactoEmergencia": {
+          "stringValue": "MAZZA ANA LIA"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "obraSocial": {
+          "stringValue": "OSPEPRI"
+        },
+        "cirugias": {
+          "stringValue": "NINGUNA"
+        },
+        "empresa": {
+          "stringValue": "FISHER"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-03-06T12:55:48.209Z"
+        },
+        "dni": {
+          "stringValue": "14648700"
+        },
+        "peso": {
+          "stringValue": "88"
+        },
+        "factorSanguineo": {
+          "stringValue": "+"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        }
+      },
+      "createTime": "2026-03-06T12:55:36.039956Z",
+      "updateTime": "2026-09-13T23:44:05.926843Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/15111119",
+      "fields": {
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "enfermedades": {
+          "stringValue": "sfsda"
+        },
+        "nombreCompleto": {
+          "stringValue": "JULIO MERNOS"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=15111119&v=1"
+        },
+        "qrId": {
+          "stringValue": "29ab2622-5e46-4953-97a9-1b80b0124ee8"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-03-29T03:42:23.250Z"
+        },
+        "discapacidad": {
+          "stringValue": "fdsafdsa"
+        },
+        "fechaNacimiento": {
+          "stringValue": "Tue Nov 10 1987 23:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "condicionMedica": {
+          "stringValue": "dsafdsaf"
+        },
+        "emailEnviado": {
+          "stringValue": "2026-03-29T03:42:17.571Z"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=15111119&v=1"
+        },
+        "alergias": {
+          "stringValue": "fdsaf"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "altura": {
+          "stringValue": "165"
+        },
+        "grupoSanguineo": {
+          "stringValue": "B"
+        },
+        "medicacion": {
+          "stringValue": "sfdsaf"
+        },
+        "empresa": {
+          "stringValue": "EQUINOR"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2994523793"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "peso": {
+          "stringValue": "88"
+        },
+        "obraSocial": {
+          "stringValue": "OSDE"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "cirugias": {
+          "stringValue": "fdsaafdsa"
+        },
+        "contactoEmergencia": {
+          "stringValue": "MAZZA ANA LIA"
+        },
+        "historialVersiones": {
+          "stringValue": "Actualizaci?n: 29/03/26 00:42"
+        },
+        "factorSanguineo": {
+          "stringValue": "+"
+        },
+        "dni": {
+          "stringValue": "15111119"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-03-29T03:42:23.249Z"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "nota": {
+          "stringValue": ""
+        }
+      },
+      "createTime": "2026-03-29T03:37:16.131237Z",
+      "updateTime": "2026-09-13T23:44:06.151946Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/15342009",
+      "fields": {
+        "qrId": {
+          "stringValue": "95efd624-4683-4043-a189-489311d55f1c"
+        },
+        "altura": {
+          "stringValue": "156"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "medicacion": {
+          "stringValue": "dhgfdhgdf"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "grupoSanguineo": {
+          "stringValue": "B"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2994523793"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "dni": {
+          "stringValue": "15342009"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "nombreCompleto": {
+          "stringValue": "LIVIA CARROSO"
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "fechaNacimiento": {
+          "stringValue": "Fri Sep 12 1986 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "alergias": {
+          "stringValue": "hgfhgf"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-03-14T02:39:32.997Z"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "enlaceQR": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=15342009&v=1"
+        },
+        "condicionMedica": {
+          "stringValue": "hgfdhgdf"
+        },
+        "discapacidad": {
+          "stringValue": "hgfdhgfd"
+        },
+        "cirugias": {
+          "stringValue": "hgdhgfdhgf"
+        },
+        "emailEnviado": {
+          "stringValue": "2026-03-14T02:39:20.745Z"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "peso": {
+          "stringValue": "77"
+        },
+        "enfermedades": {
+          "stringValue": "ytrwytr"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-03-14T02:39:32.996Z"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=15342009&v=1"
+        },
+        "empresa": {
+          "stringValue": "VISTA"
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "factorSanguineo": {
+          "stringValue": "-"
+        },
+        "obraSocial": {
+          "stringValue": "Test"
+        },
+        "contactoEmergencia": {
+          "stringValue": "MAZZA ANA LIA"
+        }
+      },
+      "createTime": "2026-03-14T02:39:21.131257Z",
+      "updateTime": "2026-09-13T23:44:06.386206Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/15342309",
+      "fields": {
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "grupoSanguineo": {
+          "stringValue": "A"
+        },
+        "peso": {
+          "stringValue": "77"
+        },
+        "altura": {
+          "stringValue": "167"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "fechaNacimiento": {
+          "stringValue": "Thu Sep 10 1987 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "condicionMedica": {
+          "stringValue": "fdsfds"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "obraSocial": {
+          "stringValue": "Test"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=15342309&v=1"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-03-14T02:12:06.751Z"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "nombreCompleto": {
+          "stringValue": "NICOLAS SCHENARDI"
+        },
+        "alergias": {
+          "stringValue": "fdsfds"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "contactoEmergencia": {
+          "stringValue": "MAZZA ANA LIA"
+        },
+        "enlaceQR": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=15342309&v=1"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "dni": {
+          "stringValue": "15342309"
+        },
+        "qrId": {
+          "stringValue": "a6e72999-327b-4ba7-964d-d3cfd428e285"
+        },
+        "cirugias": {
+          "stringValue": "fdsfds"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "medicacion": {
+          "stringValue": "fdsfds"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2995557013"
+        },
+        "factorSanguineo": {
+          "stringValue": "+"
+        },
+        "enfermedades": {
+          "stringValue": "srew"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "empresa": {
+          "stringValue": "SIMA"
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "discapacidad": {
+          "stringValue": "fdsfds"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-03-14T02:12:06.753Z"
+        },
+        "emailEnviado": {
+          "stringValue": "2026-03-14T02:11:52.952Z"
+        }
+      },
+      "createTime": "2026-03-14T02:11:53.421395Z",
+      "updateTime": "2026-09-13T23:44:06.619334Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/15342342",
+      "fields": {
+        "nombreCompleto": {
+          "stringValue": "NICOLAS SCHENARDI"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "qrId": {
+          "stringValue": "965e8d66-000f-4f43-b626-d68d18446dd0"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "medicacion": {
+          "stringValue": "NINGUNA"
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "contactoEmergencia": {
+          "stringValue": "MAZZA ANA LIA"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "cirugias": {
+          "stringValue": "NINGUNA"
+        },
+        "factorSanguineo": {
+          "stringValue": "+"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "altura": {
+          "stringValue": "189"
+        },
+        "grupoSanguineo": {
+          "stringValue": "O"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=15342342&v=1"
+        },
+        "peso": {
+          "stringValue": "99"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2995557013"
+        },
+        "enlaceQR": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=15342342&v=1"
+        },
+        "alergias": {
+          "stringValue": "NINGUNA"
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "dni": {
+          "stringValue": "15342342"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-03-05T01:37:54.704Z"
+        },
+        "obraSocial": {
+          "stringValue": "OSPEPRI"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-03-05T01:37:54.706Z"
+        },
+        "enfermedades": {
+          "stringValue": "NINGUNA"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "empresa": {
+          "stringValue": "FISHER"
+        },
+        "condicionMedica": {
+          "stringValue": "NINGUNA"
+        },
+        "emailEnviado": {
+          "stringValue": "2026-03-05T01:37:44.158Z"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "discapacidad": {
+          "stringValue": "NINGUNA"
+        },
+        "fechaNacimiento": {
+          "stringValue": "Mon Aug 10 1981 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        }
+      },
+      "createTime": "2026-03-05T01:37:44.468186Z",
+      "updateTime": "2026-09-13T23:44:06.827477Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/21789441329608",
+      "fields": {
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "fechaNacimiento": {
+          "stringValue": ""
+        },
+        "condicionMedica": {
+          "stringValue": ""
+        },
+        "qrId": {
+          "stringValue": "53d34e6b-017e-4b74-ba3f-c7e9bbfc94f6"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "alergias": {
+          "stringValue": ""
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-09-15T03:02:09.612Z"
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?qrId=53d34e6b-017e-4b74-ba3f-c7e9bbfc94f6"
+        },
+        "estadoProceso": {
+          "stringValue": "PENDIENTE"
+        },
+        "empresa": {
+          "stringValue": "TEST SECURITY ORG"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?qrId=53d34e6b-017e-4b74-ba3f-c7e9bbfc94f6"
+        },
+        "dni": {
+          "stringValue": "21789441329608"
+        },
+        "telefonoEmergencia": {
+          "stringValue": ""
+        },
+        "obraSocial": {
+          "stringValue": ""
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "grupoSanguineo": {
+          "stringValue": ""
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "medicacion": {
+          "stringValue": ""
+        },
+        "factorSanguineo": {
+          "stringValue": ""
+        },
+        "contactoEmergencia": {
+          "stringValue": ""
+        },
+        "peso": {
+          "stringValue": ""
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "email": {
+          "stringValue": ""
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "fechaRegistro": {
+          "stringValue": "2026-09-15T03:02:09.949Z"
+        },
+        "enfermedades": {
+          "stringValue": ""
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "cirugias": {
+          "stringValue": ""
+        },
+        "emailEnviado": {
+          "stringValue": ""
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-09-15T03:02:09.609Z"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "discapacidad": {
+          "stringValue": ""
+        },
+        "altura": {
+          "stringValue": ""
+        },
+        "nombreCompleto": {
+          "stringValue": "Test S2 Seguridad"
+        }
+      },
+      "createTime": "2026-09-15T03:02:10.264604Z",
+      "updateTime": "2026-09-15T03:02:13.603245Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/21789441802346",
+      "fields": {
+        "nota": {
+          "stringValue": ""
+        },
+        "empresa": {
+          "stringValue": "TEST SECURITY ORG"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-09-15T03:10:02.347Z"
+        },
+        "estadoProceso": {
+          "stringValue": "PENDIENTE"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-09-15T03:10:02.348Z"
+        },
+        "medicacion": {
+          "stringValue": ""
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "nombreCompleto": {
+          "stringValue": "Test S2 Seguridad"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "grupoSanguineo": {
+          "stringValue": ""
+        },
+        "telefonoEmergencia": {
+          "stringValue": ""
+        },
+        "factorSanguineo": {
+          "stringValue": ""
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "email": {
+          "stringValue": ""
+        },
+        "altura": {
+          "stringValue": ""
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "cirugias": {
+          "stringValue": ""
+        },
+        "peso": {
+          "stringValue": ""
+        },
+        "alergias": {
+          "stringValue": ""
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "enfermedades": {
+          "stringValue": ""
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?qrId=2c80e65a-33d9-4360-a980-a32cf2283fec"
+        },
+        "contactoEmergencia": {
+          "stringValue": ""
+        },
+        "discapacidad": {
+          "stringValue": ""
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "emailEnviado": {
+          "stringValue": ""
+        },
+        "condicionMedica": {
+          "stringValue": ""
+        },
+        "fechaNacimiento": {
+          "stringValue": ""
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?qrId=2c80e65a-33d9-4360-a980-a32cf2283fec"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "qrId": {
+          "stringValue": "2c80e65a-33d9-4360-a980-a32cf2283fec"
+        },
+        "fechaRegistro": {
+          "stringValue": "2026-09-15T03:10:02.542Z"
+        },
+        "obraSocial": {
+          "stringValue": ""
+        },
+        "dni": {
+          "stringValue": "21789441802346"
+        }
+      },
+      "createTime": "2026-09-15T03:10:02.696144Z",
+      "updateTime": "2026-09-15T03:10:04.972764Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/21789476684860",
+      "fields": {
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "qrId": {
+          "stringValue": "46822383-40ff-4bb9-971f-a6fb69ae539d"
+        },
+        "telefonoEmergencia": {
+          "stringValue": ""
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "fechaRegistro": {
+          "stringValue": "2026-09-15T12:51:25.364Z"
+        },
+        "grupoSanguineo": {
+          "stringValue": ""
+        },
+        "email": {
+          "stringValue": ""
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "alergias": {
+          "stringValue": ""
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-09-15T12:51:24.873Z"
+        },
+        "condicionMedica": {
+          "stringValue": ""
+        },
+        "fechaNacimiento": {
+          "stringValue": ""
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?qrId=46822383-40ff-4bb9-971f-a6fb69ae539d"
+        },
+        "nombreCompleto": {
+          "stringValue": "Test S2 Seguridad"
+        },
+        "obraSocial": {
+          "stringValue": ""
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "empresa": {
+          "stringValue": "TEST SECURITY ORG"
+        },
+        "dni": {
+          "stringValue": "21789476684860"
+        },
+        "medicacion": {
+          "stringValue": ""
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "peso": {
+          "stringValue": ""
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?qrId=46822383-40ff-4bb9-971f-a6fb69ae539d"
+        },
+        "altura": {
+          "stringValue": ""
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "cirugias": {
+          "stringValue": ""
+        },
+        "factorSanguineo": {
+          "stringValue": ""
+        },
+        "contactoEmergencia": {
+          "stringValue": ""
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-09-15T12:51:24.866Z"
+        },
+        "estadoProceso": {
+          "stringValue": "PENDIENTE"
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "enfermedades": {
+          "stringValue": ""
+        },
+        "emailEnviado": {
+          "stringValue": ""
+        },
+        "discapacidad": {
+          "stringValue": ""
+        }
+      },
+      "createTime": "2026-09-15T12:51:25.504741Z",
+      "updateTime": "2026-09-15T12:51:27.324273Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/22222222",
+      "fields": {
+        "altura": {
+          "stringValue": ""
+        },
+        "fechaNacimiento": {
+          "stringValue": ""
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "condicionMedica": {
+          "stringValue": ""
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "peso": {
+          "stringValue": ""
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-09-15T00:32:54.212Z"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-09-15T00:32:54.212Z"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "dni": {
+          "stringValue": "22222222"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=22222222&v=1"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "telefonoEmergencia": {
+          "stringValue": ""
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "alergias": {
+          "stringValue": ""
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "obraSocial": {
+          "stringValue": ""
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=22222222&v=1"
+        },
+        "nombreCompleto": {
+          "stringValue": "Empleado Test 2 ACTUALIZADO"
+        },
+        "cirugias": {
+          "stringValue": ""
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "email": {
+          "stringValue": "test2_nuevo@test.com"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "medicacion": {
+          "stringValue": ""
+        },
+        "factorSanguineo": {
+          "stringValue": ""
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "contactoEmergencia": {
+          "stringValue": ""
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "enfermedades": {
+          "stringValue": ""
+        },
+        "estadoProceso": {
+          "stringValue": "PENDIENTE"
+        },
+        "empresa": {
+          "stringValue": "EMPRESA TEST B"
+        },
+        "discapacidad": {
+          "stringValue": ""
+        },
+        "grupoSanguineo": {
+          "stringValue": ""
+        },
+        "emailEnviado": {
+          "stringValue": ""
+        }
+      },
+      "createTime": "2026-09-14T23:30:02.853325Z",
+      "updateTime": "2026-09-15T00:32:54.618249Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/23445446",
+      "fields": {
+        "alergias": {
+          "stringValue": "gfsdgfds"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "enlaceQR": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=23445446&v=1"
+        },
+        "empresa": {
+          "stringValue": "BENJA OIL & GAS"
+        },
+        "enfermedades": {
+          "stringValue": "gfdsgfsd"
+        },
+        "nombreCompleto": {
+          "stringValue": "NENE MALO"
+        },
+        "emailEnviado": {
+          "stringValue": "2026-03-14T02:29:24.371Z"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "discapacidad": {
+          "stringValue": "gfsdgfds"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "peso": {
+          "stringValue": "88"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "obraSocial": {
+          "stringValue": "OSPEPRI"
+        },
+        "factorSanguineo": {
+          "stringValue": "+"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "altura": {
+          "stringValue": "178"
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "grupoSanguineo": {
+          "stringValue": "AB"
+        },
+        "dni": {
+          "stringValue": "23445446"
+        },
+        "contactoEmergencia": {
+          "stringValue": "MAZZA ANA LIA"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "qrId": {
+          "stringValue": "0b0bb6de-26e3-410f-bea3-41f45307b3b6"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2995557013"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "medicacion": {
+          "stringValue": "gfsd"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "fechaNacimiento": {
+          "stringValue": "Thu Sep 10 1987 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=23445446&v=1"
+        },
+        "condicionMedica": {
+          "stringValue": "gfds"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-03-14T02:29:36.371Z"
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "cirugias": {
+          "stringValue": "gfdsgfds"
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-03-14T02:29:36.372Z"
+        }
+      },
+      "createTime": "2026-03-14T02:29:24.652135Z",
+      "updateTime": "2026-09-13T23:44:07.062125Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/28416763",
+      "fields": {
+        "historialVersiones": {
+          "stringValue": "Actualizaci?n: 16/08/26 23:03"
+        },
+        "nombreCompleto": {
+          "stringValue": "NICOLAS HERNADEZ"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "contactoEmergencia": {
+          "stringValue": "SEBA"
+        },
+        "fechaNacimiento": {
+          "stringValue": "Wed Sep 24 1980 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "peso": {
+          "stringValue": "110"
+        },
+        "condicionMedica": {
+          "stringValue": "PUTO"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "empresa": {
+          "stringValue": "YPF"
+        },
+        "cirugias": {
+          "stringValue": "ESTIRAMIENTOPENEANO"
+        },
+        "obraSocial": {
+          "stringValue": "OSDE"
+        },
+        "grupoSanguineo": {
+          "stringValue": "B"
+        },
+        "discapacidad": {
+          "stringValue": "MENTAL"
+        },
+        "emailEnviado": {
+          "stringValue": "2026-08-17T02:03:00.539Z"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "qrId": {
+          "stringValue": "7f32a6cb-3c62-4d51-8fd5-c6bca19c77ec"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-08-17T02:03:06.863Z"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=28416763&v=1"
+        },
+        "enfermedades": {
+          "stringValue": "CARDIOPATIA"
+        },
+        "alergias": {
+          "stringValue": "PENE"
+        },
+        "dni": {
+          "stringValue": "28416763"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=28416763&v=1"
+        },
+        "factorSanguineo": {
+          "stringValue": "+"
+        },
+        "medicacion": {
+          "stringValue": "PARAPITOL Y ABRIDORANAL"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2994456656"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-08-17T02:03:06.861Z"
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "altura": {
+          "stringValue": "179"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "email": {
+          "stringValue": "nic40ar@gmail.com"
+        }
+      },
+      "createTime": "2026-08-17T02:00:49.273534Z",
+      "updateTime": "2026-09-13T23:44:07.269844Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/28920300",
+      "fields": {
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=28920300&v=1"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-06-18T15:44:47.627Z"
+        },
+        "peso": {
+          "stringValue": "80"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2995557015"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "obraSocial": {
+          "stringValue": "OSDE"
+        },
+        "dni": {
+          "stringValue": "28920300"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "discapacidad": {
+          "stringValue": "Movilidad reducida"
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=28920300&v=1"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "alergias": {
+          "stringValue": "Penicilina\nIbuprofeno\nNueces"
+        },
+        "factorSanguineo": {
+          "stringValue": "+"
+        },
+        "emailEnviado": {
+          "stringValue": "2026-06-18T15:44:33.604Z"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "empresa": {
+          "stringValue": "PLUSPETROL"
+        },
+        "enfermedades": {
+          "stringValue": "Diabetes tipo 2\nArritmia supraventricular Parox?stica"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-06-18T15:44:47.628Z"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "cirugias": {
+          "stringValue": "V?lvula cardiaca\ncirug?a de rodilla derecha"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "nombreCompleto": {
+          "stringValue": "NICOLAS SCHENARDI"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "altura": {
+          "stringValue": "185"
+        },
+        "qrId": {
+          "stringValue": "8c0c3706-eb90-437f-be2e-bc24427e4cc7"
+        },
+        "fechaNacimiento": {
+          "stringValue": "Wed Sep 10 1980 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "grupoSanguineo": {
+          "stringValue": "A"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "medicacion": {
+          "stringValue": "Metformina\nBisoprolol 5 mg"
+        },
+        "condicionMedica": {
+          "stringValue": "Stent coronario\nMarcapasos"
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "contactoEmergencia": {
+          "stringValue": "Claudio Lopez"
+        }
+      },
+      "createTime": "2026-06-18T15:44:33.956053Z",
+      "updateTime": "2026-09-13T23:44:07.586081Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/31789441334481",
+      "fields": {
+        "idSesion": {
+          "stringValue": ""
+        },
+        "fechaNacimiento": {
+          "stringValue": ""
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "qrId": {
+          "stringValue": "2b049f21-e8b2-4be6-81a4-196ee5a846dc"
+        },
+        "condicionMedica": {
+          "stringValue": ""
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "email": {
+          "stringValue": ""
+        },
+        "telefonoEmergencia": {
+          "stringValue": ""
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "medicacion": {
+          "stringValue": ""
+        },
+        "grupoSanguineo": {
+          "stringValue": ""
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?qrId=2b049f21-e8b2-4be6-81a4-196ee5a846dc"
+        },
+        "nombreCompleto": {
+          "stringValue": "Test S3 Enlaces"
+        },
+        "estadoProceso": {
+          "stringValue": "PENDIENTE"
+        },
+        "alergias": {
+          "stringValue": ""
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-09-15T03:02:14.481Z"
+        },
+        "factorSanguineo": {
+          "stringValue": ""
+        },
+        "dni": {
+          "stringValue": "31789441334481"
+        },
+        "enfermedades": {
+          "stringValue": ""
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-09-15T03:02:14.481Z"
+        },
+        "cirugias": {
+          "stringValue": ""
+        },
+        "emailEnviado": {
+          "stringValue": ""
+        },
+        "peso": {
+          "stringValue": ""
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "empresa": {
+          "stringValue": "TEST ENLACES ORG"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "fechaRegistro": {
+          "stringValue": "2026-09-15T03:02:14.718Z"
+        },
+        "discapacidad": {
+          "stringValue": ""
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "altura": {
+          "stringValue": ""
+        },
+        "obraSocial": {
+          "stringValue": ""
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?qrId=2b049f21-e8b2-4be6-81a4-196ee5a846dc"
+        },
+        "contactoEmergencia": {
+          "stringValue": ""
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        }
+      },
+      "createTime": "2026-09-15T03:02:14.946644Z",
+      "updateTime": "2026-09-15T03:02:17.836089Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/33333333",
+      "fields": {
+        "factorSanguineo": {
+          "stringValue": ""
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "altura": {
+          "stringValue": ""
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "alergias": {
+          "stringValue": ""
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "empresa": {
+          "stringValue": "EMPRESA TEST B"
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=33333333&v=1"
+        },
+        "contactoEmergencia": {
+          "stringValue": ""
+        },
+        "email": {
+          "stringValue": "test3@test.com"
+        },
+        "medicacion": {
+          "stringValue": ""
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-09-15T00:32:54.979Z"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "condicionMedica": {
+          "stringValue": ""
+        },
+        "dni": {
+          "stringValue": "33333333"
+        },
+        "obraSocial": {
+          "stringValue": ""
+        },
+        "estadoProceso": {
+          "stringValue": "PENDIENTE"
+        },
+        "telefonoEmergencia": {
+          "stringValue": ""
+        },
+        "fechaNacimiento": {
+          "stringValue": ""
+        },
+        "nombreCompleto": {
+          "stringValue": "Empleado Test 3"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=33333333&v=1"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "cirugias": {
+          "stringValue": ""
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "peso": {
+          "stringValue": ""
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-09-15T00:32:54.979Z"
+        },
+        "enfermedades": {
+          "stringValue": ""
+        },
+        "grupoSanguineo": {
+          "stringValue": ""
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "emailEnviado": {
+          "stringValue": ""
+        },
+        "discapacidad": {
+          "stringValue": ""
+        }
+      },
+      "createTime": "2026-09-14T23:30:03.720648Z",
+      "updateTime": "2026-09-15T00:32:55.361308Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/39900073",
+      "fields": {
+        "nota": {
+          "stringValue": ""
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=39900073&v=1"
+        },
+        "contactoEmergencia": {
+          "stringValue": "MAZZA ANA LIA"
+        },
+        "condicionMedica": {
+          "stringValue": "FDSSFDS"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "fechaNacimiento": {
+          "stringValue": "Thu Sep 10 1987 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "medicacion": {
+          "stringValue": "FDSFDS"
+        },
+        "cirugias": {
+          "stringValue": "FDSSF"
+        },
+        "enfermedades": {
+          "stringValue": "NINGUNA"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "discapacidad": {
+          "stringValue": "DSFDS"
+        },
+        "emailEnviado": {
+          "stringValue": "2026-05-05T02:17:31.547Z"
+        },
+        "peso": {
+          "stringValue": "77"
+        },
+        "empresa": {
+          "stringValue": "YPF"
+        },
+        "altura": {
+          "stringValue": "187"
+        },
+        "grupoSanguineo": {
+          "stringValue": "AB"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=39900073&v=1"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-05-05T02:17:43.812Z"
+        },
+        "factorSanguineo": {
+          "stringValue": "+"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "alergias": {
+          "stringValue": "FDSFSD"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-05-05T02:17:43.811Z"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "qrId": {
+          "stringValue": "b809e9aa-a236-4ef0-84f7-4c1a85d020d8"
+        },
+        "obraSocial": {
+          "stringValue": "OSPEPRI"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "nombreCompleto": {
+          "stringValue": "JULIO MERNOS"
+        },
+        "dni": {
+          "stringValue": "39900073"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2995557013"
+        }
+      },
+      "createTime": "2026-05-05T02:17:31.876775Z",
+      "updateTime": "2026-09-13T23:44:07.852317Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/41789441338586",
+      "fields": {
+        "fechaNacimiento": {
+          "stringValue": ""
+        },
+        "empresa": {
+          "stringValue": "TEST PERSIST ORG"
+        },
+        "estadoProceso": {
+          "stringValue": "PENDIENTE"
+        },
+        "condicionMedica": {
+          "stringValue": ""
+        },
+        "grupoSanguineo": {
+          "stringValue": ""
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-09-15T03:02:21.658Z"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "obraSocial": {
+          "stringValue": ""
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-09-15T03:02:21.658Z"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "altura": {
+          "stringValue": ""
+        },
+        "nombreCompleto": {
+          "stringValue": "Test S4 Persistencia"
+        },
+        "alergias": {
+          "stringValue": ""
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?qrId=23e44364-73ef-4309-b276-41c9ccc81ede"
+        },
+        "qrId": {
+          "stringValue": "23e44364-73ef-4309-b276-41c9ccc81ede"
+        },
+        "telefonoEmergencia": {
+          "stringValue": ""
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?qrId=23e44364-73ef-4309-b276-41c9ccc81ede"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "enfermedades": {
+          "stringValue": ""
+        },
+        "factorSanguineo": {
+          "stringValue": ""
+        },
+        "cirugias": {
+          "stringValue": ""
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "medicacion": {
+          "stringValue": ""
+        },
+        "dni": {
+          "stringValue": "41789441338586"
+        },
+        "contactoEmergencia": {
+          "stringValue": ""
+        },
+        "discapacidad": {
+          "stringValue": ""
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "emailEnviado": {
+          "stringValue": ""
+        },
+        "peso": {
+          "stringValue": ""
+        },
+        "fechaRegistro": {
+          "stringValue": "2026-09-15T03:02:18.791Z"
+        },
+        "email": {
+          "stringValue": "actualizado@test.com"
+        }
+      },
+      "createTime": "2026-09-15T03:02:18.961162Z",
+      "updateTime": "2026-09-15T03:02:23.477471Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/44444444",
+      "fields": {
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "enfermedades": {
+          "stringValue": ""
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=44444444&v=1"
+        },
+        "peso": {
+          "stringValue": ""
+        },
+        "nombreCompleto": {
+          "stringValue": "Empleado Test 4"
+        },
+        "emailEnviado": {
+          "stringValue": ""
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "contactoEmergencia": {
+          "stringValue": ""
+        },
+        "alergias": {
+          "stringValue": ""
+        },
+        "discapacidad": {
+          "stringValue": ""
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-09-15T00:32:56.085Z"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "altura": {
+          "stringValue": ""
+        },
+        "grupoSanguineo": {
+          "stringValue": ""
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "medicacion": {
+          "stringValue": ""
+        },
+        "empresa": {
+          "stringValue": "EMPRESA TEST IDEMPOTENTE"
+        },
+        "factorSanguineo": {
+          "stringValue": ""
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "dni": {
+          "stringValue": "44444444"
+        },
+        "estadoProceso": {
+          "stringValue": "PENDIENTE"
+        },
+        "obraSocial": {
+          "stringValue": ""
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-09-15T00:32:56.085Z"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "cirugias": {
+          "stringValue": ""
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "fechaNacimiento": {
+          "stringValue": ""
+        },
+        "telefonoEmergencia": {
+          "stringValue": ""
+        },
+        "email": {
+          "stringValue": "test4@test.com"
+        },
+        "condicionMedica": {
+          "stringValue": ""
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=44444444&v=1"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        }
+      },
+      "createTime": "2026-09-14T23:30:04.373497Z",
+      "updateTime": "2026-09-15T00:32:56.345114Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/44566565",
+      "fields": {
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "cirugias": {
+          "stringValue": "NINGUNA"
+        },
+        "medicacion": {
+          "stringValue": "NINGUNA"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-05-17T02:55:01.915Z"
+        },
+        "discapacidad": {
+          "stringValue": "NINGUNA"
+        },
+        "condicionMedica": {
+          "stringValue": "NINGUNA"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=44566565&v=1"
+        },
+        "emailEnviado": {
+          "stringValue": "2026-05-17T02:54:51.493Z"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "fechaNacimiento": {
+          "stringValue": "Thu Sep 10 1987 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "enfermedades": {
+          "stringValue": "NINGUNA"
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "contactoEmergencia": {
+          "stringValue": "MAZZA ANA LIA"
+        },
+        "empresa": {
+          "stringValue": "YPF"
+        },
+        "qrId": {
+          "stringValue": "08dce08a-05f3-4fb6-8811-590aaeab1695"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "altura": {
+          "stringValue": "175"
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "grupoSanguineo": {
+          "stringValue": "B"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2995557013"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "dni": {
+          "stringValue": "44566565"
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=44566565&v=1"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "factorSanguineo": {
+          "stringValue": "-"
+        },
+        "alergias": {
+          "stringValue": "NINGUNA"
+        },
+        "peso": {
+          "stringValue": "77"
+        },
+        "obraSocial": {
+          "stringValue": "OSPEPRI"
+        },
+        "nombreCompleto": {
+          "stringValue": "NICOLAS SCHENARDI"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-05-17T02:55:01.916Z"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        }
+      },
+      "createTime": "2026-05-17T02:54:51.800099Z",
+      "updateTime": "2026-09-13T23:44:08.046790Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/44566589",
+      "fields": {
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "fechaNacimiento": {
+          "stringValue": "Mon Aug 10 1987 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "contactoEmergencia": {
+          "stringValue": "MAZZA ANA LIA"
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "cirugias": {
+          "stringValue": "NINGUNA"
+        },
+        "obraSocial": {
+          "stringValue": "OSPEPRI"
+        },
+        "historialVersiones": {
+          "stringValue": "Actualizaci?n: 18/05/26 17:33"
+        },
+        "condicionMedica": {
+          "stringValue": "NINGUNA"
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "peso": {
+          "stringValue": "100"
+        },
+        "emailEnviado": {
+          "stringValue": "2026-05-18T20:33:12.341Z"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "discapacidad": {
+          "stringValue": "NINGUNA"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-05-18T20:33:20.450Z"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=44566589&v=1"
+        },
+        "enfermedades": {
+          "stringValue": "NINGUNA"
+        },
+        "dni": {
+          "stringValue": "44566589"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "nombreCompleto": {
+          "stringValue": "NICOLAS SCHEWFERR"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-05-18T20:33:20.451Z"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "factorSanguineo": {
+          "stringValue": "+"
+        },
+        "qrId": {
+          "stringValue": "e904edbc-ea3e-4a67-9a66-6e788a29b7b2"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "altura": {
+          "stringValue": "194"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2995557013"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "empresa": {
+          "stringValue": "YPF"
+        },
+        "alergias": {
+          "stringValue": "NINGUNA"
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=44566589&v=1"
+        },
+        "medicacion": {
+          "stringValue": "NINGUNA"
+        },
+        "grupoSanguineo": {
+          "stringValue": "B"
+        }
+      },
+      "createTime": "2026-05-18T20:31:22.043774Z",
+      "updateTime": "2026-09-13T23:44:08.255921Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/45666777",
+      "fields": {
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "medicacion": {
+          "stringValue": "gfdgfsd"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=45666777&v=1"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "altura": {
+          "stringValue": "189"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "empresa": {
+          "stringValue": "SIMA"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2994523793"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-03-14T02:12:48.311Z"
+        },
+        "qrId": {
+          "stringValue": "d6527712-0168-4219-84c7-11ed09385902"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "factorSanguineo": {
+          "stringValue": "-"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-03-14T02:12:48.311Z"
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "cirugias": {
+          "stringValue": "sgfds"
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "enlaceQR": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=45666777&v=1"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "emailEnviado": {
+          "stringValue": "2026-03-14T02:12:40.403Z"
+        },
+        "alergias": {
+          "stringValue": "gfdgfd"
+        },
+        "discapacidad": {
+          "stringValue": "gfdsgfd"
+        },
+        "grupoSanguineo": {
+          "stringValue": "AB"
+        },
+        "enfermedades": {
+          "stringValue": "fgfd"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "fechaNacimiento": {
+          "stringValue": "Sun Sep 13 1987 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "condicionMedica": {
+          "stringValue": "gfdgfd"
+        },
+        "nombreCompleto": {
+          "stringValue": "JULIO MERNOS"
+        },
+        "dni": {
+          "stringValue": "45666777"
+        },
+        "contactoEmergencia": {
+          "stringValue": "MAZZA ANA LIA"
+        },
+        "obraSocial": {
+          "stringValue": "OSPEPRI"
+        },
+        "peso": {
+          "stringValue": "77"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        }
+      },
+      "createTime": "2026-03-14T02:12:40.680153Z",
+      "updateTime": "2026-09-13T23:44:08.457102Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/55000000",
+      "fields": {
+        "cirugias": {
+          "stringValue": "gfdsgfsd"
+        },
+        "grupoSanguineo": {
+          "stringValue": "B"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "medicacion": {
+          "stringValue": "gfdsgfdsgfd"
+        },
+        "contactoEmergencia": {
+          "stringValue": "NICOLAS SCHENARDI"
+        },
+        "empresa": {
+          "stringValue": "WELLTUBING"
+        },
+        "historialVersiones": {
+          "stringValue": "Actualizaci?n: 16/04/26 23:45"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "enfermedades": {
+          "stringValue": "gfagfsdg"
+        },
+        "peso": {
+          "stringValue": "78"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "dni": {
+          "stringValue": "55000000"
+        },
+        "discapacidad": {
+          "stringValue": "gfdssgfsd"
+        },
+        "condicionMedica": {
+          "stringValue": "gfdgfdsg"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "emailEnviado": {
+          "stringValue": "2026-04-17T02:45:47.061Z"
+        },
+        "nombreCompleto": {
+          "stringValue": "JULIO MERNOS"
+        },
+        "fechaNacimiento": {
+          "stringValue": "Sat Sep 12 1987 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=55000000&v=1"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-04-17T02:45:55.434Z"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-04-17T02:45:55.433Z"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "altura": {
+          "stringValue": "178"
+        },
+        "factorSanguineo": {
+          "stringValue": "-"
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=55000000&v=1"
+        },
+        "qrId": {
+          "stringValue": "5375ebf7-8f1d-4888-b04b-087e8a376e4d"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "alergias": {
+          "stringValue": "gfdsgfsd"
+        },
+        "obraSocial": {
+          "stringValue": "Test"
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2995557013"
+        }
+      },
+      "createTime": "2026-03-18T12:31:21.766910Z",
+      "updateTime": "2026-09-13T23:44:08.691399Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/55555555",
+      "fields": {
+        "contactoEmergencia": {
+          "stringValue": ""
+        },
+        "altura": {
+          "stringValue": ""
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "discapacidad": {
+          "stringValue": ""
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=55555555&v=1"
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "emailEnviado": {
+          "stringValue": ""
+        },
+        "estadoProceso": {
+          "stringValue": "PENDIENTE"
+        },
+        "dni": {
+          "stringValue": "55555555"
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=55555555&v=1"
+        },
+        "enfermedades": {
+          "stringValue": ""
+        },
+        "fechaNacimiento": {
+          "stringValue": ""
+        },
+        "condicionMedica": {
+          "stringValue": ""
+        },
+        "alergias": {
+          "stringValue": ""
+        },
+        "email": {
+          "stringValue": "test5@test.com"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "obraSocial": {
+          "stringValue": ""
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "medicacion": {
+          "stringValue": ""
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-09-15T00:32:56.388Z"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "peso": {
+          "stringValue": ""
+        },
+        "nombreCompleto": {
+          "stringValue": "Empleado Test 5"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "empresa": {
+          "stringValue": "EMPRESA TEST E"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-09-15T00:32:56.388Z"
+        },
+        "factorSanguineo": {
+          "stringValue": ""
+        },
+        "cirugias": {
+          "stringValue": ""
+        },
+        "grupoSanguineo": {
+          "stringValue": ""
+        },
+        "telefonoEmergencia": {
+          "stringValue": ""
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        }
+      },
+      "createTime": "2026-09-14T23:30:05.392850Z",
+      "updateTime": "2026-09-15T00:32:56.649549Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/66000000",
+      "fields": {
+        "alergias": {
+          "stringValue": "NINGUNA"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2994523793"
+        },
+        "enlaceQR": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=66000000&v=1"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=66000000&v=1"
+        },
+        "peso": {
+          "stringValue": "84"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "dni": {
+          "stringValue": "66000000"
+        },
+        "discapacidad": {
+          "stringValue": "NINGUNA"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-03-18T11:51:00.925Z"
+        },
+        "emailEnviado": {
+          "stringValue": "2026-03-18T11:50:49.376Z"
+        },
+        "medicacion": {
+          "stringValue": "NINGUNA"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "factorSanguineo": {
+          "stringValue": "-"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "enfermedades": {
+          "stringValue": "NINGUNA"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "obraSocial": {
+          "stringValue": "OSPEPRI"
+        },
+        "grupoSanguineo": {
+          "stringValue": "B"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-03-18T11:51:00.923Z"
+        },
+        "qrId": {
+          "stringValue": "23a1b4d5-9c95-4ca1-86bc-11e8bea25526"
+        },
+        "empresa": {
+          "stringValue": "WELLTUBING"
+        },
+        "nombreCompleto": {
+          "stringValue": "DIEGUITO NQN"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "contactoEmergencia": {
+          "stringValue": "MAZZA ANA LIA"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "condicionMedica": {
+          "stringValue": "NINGUNA"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "altura": {
+          "stringValue": "185"
+        },
+        "fechaNacimiento": {
+          "stringValue": "Sun Sep 18 1988 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "cirugias": {
+          "stringValue": "NINGUNA"
+        }
+      },
+      "createTime": "2026-03-18T11:50:49.734009Z",
+      "updateTime": "2026-09-13T23:44:08.888482Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/66666666",
+      "fields": {
+        "empresa": {
+          "stringValue": "EMPRESA TEST F"
+        },
+        "medicacion": {
+          "stringValue": ""
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "factorSanguineo": {
+          "stringValue": ""
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=66666666&v=1"
+        },
+        "contactoEmergencia": {
+          "stringValue": ""
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "cirugias": {
+          "stringValue": ""
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "enfermedades": {
+          "stringValue": ""
+        },
+        "alergias": {
+          "stringValue": ""
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=66666666&v=1"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "dni": {
+          "stringValue": "66666666"
+        },
+        "altura": {
+          "stringValue": ""
+        },
+        "grupoSanguineo": {
+          "stringValue": ""
+        },
+        "peso": {
+          "stringValue": ""
+        },
+        "discapacidad": {
+          "stringValue": ""
+        },
+        "telefonoEmergencia": {
+          "stringValue": ""
+        },
+        "email": {
+          "stringValue": "test6_nuevo@test.com"
+        },
+        "emailEnviado": {
+          "stringValue": ""
+        },
+        "condicionMedica": {
+          "stringValue": ""
+        },
+        "estadoProceso": {
+          "stringValue": "PENDIENTE"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "fechaNacimiento": {
+          "stringValue": ""
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "nombreCompleto": {
+          "stringValue": "Empleado Test 6 ACTUALIZADO"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-09-15T00:32:56.680Z"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-09-15T00:32:56.680Z"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "obraSocial": {
+          "stringValue": ""
+        }
+      },
+      "createTime": "2026-09-14T23:30:05.823641Z",
+      "updateTime": "2026-09-15T00:32:56.935510Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/76555666",
+      "fields": {
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "cirugias": {
+          "stringValue": "NINGUNA"
+        },
+        "altura": {
+          "stringValue": "189"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-03-28T23:34:22.947Z"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2995557013"
+        },
+        "empresa": {
+          "stringValue": "EQUINOR"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "discapacidad": {
+          "stringValue": "NINGUNA"
+        },
+        "obraSocial": {
+          "stringValue": "OSDE"
+        },
+        "emailEnviado": {
+          "stringValue": "2026-03-28T23:34:10.024Z"
+        },
+        "factorSanguineo": {
+          "stringValue": "+"
+        },
+        "enfermedades": {
+          "stringValue": "NINGUNA"
+        },
+        "dni": {
+          "stringValue": "76555666"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-03-28T23:34:22.949Z"
+        },
+        "qrId": {
+          "stringValue": "f567a46f-ec25-4905-bacb-5cb36c9bf223"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "nombreCompleto": {
+          "stringValue": "JHON VOIGHT"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=76555666&v=1"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "medicacion": {
+          "stringValue": "NINGUNA"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "grupoSanguineo": {
+          "stringValue": "A"
+        },
+        "peso": {
+          "stringValue": "88"
+        },
+        "condicionMedica": {
+          "stringValue": "NINGUNA"
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=76555666&v=1"
+        },
+        "contactoEmergencia": {
+          "stringValue": "MAZZA ANA LIA"
+        },
+        "fechaNacimiento": {
+          "stringValue": "Thu Sep 10 1987 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "alergias": {
+          "stringValue": "NINGUNA"
+        }
+      },
+      "createTime": "2026-03-28T23:34:10.365817Z",
+      "updateTime": "2026-09-13T23:44:09.137413Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/76555667",
+      "fields": {
+        "qrId": {
+          "stringValue": "95182788-fb06-4bae-8584-af3bfc319725"
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "contactoEmergencia": {
+          "stringValue": "MAZZA ANA LIA"
+        },
+        "alergias": {
+          "stringValue": "NINGUNAS"
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "enfermedades": {
+          "stringValue": "NINGUNAS"
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=76555667&v=1"
+        },
+        "empresa": {
+          "stringValue": "EQUINOR"
+        },
+        "emailEnviado": {
+          "stringValue": "2026-03-28T23:58:45.666Z"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-03-28T23:58:55.026Z"
+        },
+        "discapacidad": {
+          "stringValue": "NINGUNAS"
+        },
+        "obraSocial": {
+          "stringValue": "OSPEPRI"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=76555667&v=1"
+        },
+        "fechaNacimiento": {
+          "stringValue": "Sat Sep 10 1988 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "condicionMedica": {
+          "stringValue": "NINGUNAS"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "dni": {
+          "stringValue": "76555667"
+        },
+        "nombreCompleto": {
+          "stringValue": "NENE MALO"
+        },
+        "altura": {
+          "stringValue": "189"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-03-28T23:58:55.030Z"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "peso": {
+          "stringValue": "88"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2995557013"
+        },
+        "medicacion": {
+          "stringValue": "NINGUNAS"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "cirugias": {
+          "stringValue": "NINGUNAS"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "factorSanguineo": {
+          "stringValue": "+"
+        },
+        "grupoSanguineo": {
+          "stringValue": "AB"
+        }
+      },
+      "createTime": "2026-03-28T23:58:45.999307Z",
+      "updateTime": "2026-09-13T23:44:09.310144Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/76555668",
+      "fields": {
+        "timestampAceptacion": {
+          "stringValue": "2026-03-29T00:15:06.053Z"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=76555668&v=1"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "medicacion": {
+          "stringValue": "NINGUNA"
+        },
+        "altura": {
+          "stringValue": "167"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-03-29T00:15:06.054Z"
+        },
+        "factorSanguineo": {
+          "stringValue": "+"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "cirugias": {
+          "stringValue": "NINGUNA"
+        },
+        "discapacidad": {
+          "stringValue": "NINGUNA"
+        },
+        "emailEnviado": {
+          "stringValue": "2026-03-29T00:14:56.758Z"
+        },
+        "peso": {
+          "stringValue": "88"
+        },
+        "enfermedades": {
+          "stringValue": "NINGUNA"
+        },
+        "dni": {
+          "stringValue": "76555668"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2995557013"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "nombreCompleto": {
+          "stringValue": "DIEGUITO NQN"
+        },
+        "enlaceQR": {
+          "stringValue": "https://qrlife.com.ar/ficha?dni=76555668&v=1"
+        },
+        "contactoEmergencia": {
+          "stringValue": "MAZZA ANA LIA"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "fechaNacimiento": {
+          "stringValue": "Sat Mar 22 1986 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "empresa": {
+          "stringValue": "EQUINOR"
+        },
+        "condicionMedica": {
+          "stringValue": "NINGUNA"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "alergias": {
+          "stringValue": "NINGUNA"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "grupoSanguineo": {
+          "stringValue": "B"
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "obraSocial": {
+          "stringValue": "OSDE"
+        },
+        "qrId": {
+          "stringValue": "f35cbfed-91c0-49b3-b87e-9e76e0526a85"
+        }
+      },
+      "createTime": "2026-03-29T00:14:57.066878Z",
+      "updateTime": "2026-09-13T23:44:09.518900Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/77000000",
+      "fields": {
+        "factorSanguineo": {
+          "stringValue": "+"
+        },
+        "emailEnviado": {
+          "stringValue": "2026-03-17T01:23:45.168Z"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2995557013"
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "cirugias": {
+          "stringValue": "CIRUJIA DE  RODILLA IZQUIERDA\nAPENDICITIS"
+        },
+        "discapacidad": {
+          "stringValue": "MOVILIDAD REDUCIDA"
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "medicacion": {
+          "stringValue": "BISOPROLOL 5mg\nMETFORMINA 1000"
+        },
+        "enfermedades": {
+          "stringValue": "ARRITMIA SUPRAVENTRICULAR,\nHIPERTENSION"
+        },
+        "peso": {
+          "stringValue": "80"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-03-17T01:23:57.992Z"
+        },
+        "dni": {
+          "stringValue": "77000000"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "condicionMedica": {
+          "stringValue": "DIABETES\nSTENT"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-03-17T01:23:57.991Z"
+        },
+        "fechaNacimiento": {
+          "stringValue": "Sun Sep 10 1978 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "qrId": {
+          "stringValue": "7dc166e6-79d1-4637-a586-644e09276e39"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "grupoSanguineo": {
+          "stringValue": "A"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "altura": {
+          "stringValue": "185"
+        },
+        "nombreCompleto": {
+          "stringValue": "NICOLAS SCHENARDI"
+        },
+        "obraSocial": {
+          "stringValue": "OSDE"
+        },
+        "contactoEmergencia": {
+          "stringValue": "MAZZA ANA LIA"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "empresa": {
+          "stringValue": "WELLTUBING"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "alergias": {
+          "stringValue": "PENICILINA"
+        },
+        "enlaceQR": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=77000000&v=1"
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=77000000&v=1"
+        }
+      },
+      "createTime": "2026-03-17T01:23:45.586944Z",
+      "updateTime": "2026-09-13T23:44:09.692075Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/99000000",
+      "fields": {
+        "dni": {
+          "stringValue": "99000000"
+        },
+        "factorSanguineo": {
+          "stringValue": "+"
+        },
+        "cirugias": {
+          "stringValue": "NINGUNA"
+        },
+        "acceso": {
+          "stringValue": "Si"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "2994523793"
+        },
+        "estadoProceso": {
+          "stringValue": "EN PROCESO"
+        },
+        "altura": {
+          "stringValue": "189"
+        },
+        "qrId": {
+          "stringValue": "c3d5df8f-655c-4de7-9e5c-406743f123e3"
+        },
+        "enfermedades": {
+          "stringValue": "NINGUNA"
+        },
+        "enlaceDoc": {
+          "stringValue": ""
+        },
+        "enlaceTarjeta": {
+          "stringValue": ""
+        },
+        "emailEnviado": {
+          "stringValue": "2026-03-08T18:42:01.970Z"
+        },
+        "medicacion": {
+          "stringValue": "NINGUNA"
+        },
+        "discapacidad": {
+          "stringValue": "NINGUNA"
+        },
+        "fechaActualizacion": {
+          "stringValue": "2026-03-08T18:42:12.717Z"
+        },
+        "fechaNacimiento": {
+          "stringValue": "Thu Sep 10 1987 00:00:00 GMT-0300 (hora est?ndar de Argentina)"
+        },
+        "grupoSanguineo": {
+          "stringValue": "AB"
+        },
+        "obraSocial": {
+          "stringValue": "OSDE"
+        },
+        "nota": {
+          "stringValue": ""
+        },
+        "condicionMedica": {
+          "stringValue": "NINGUNA"
+        },
+        "timestampAceptacion": {
+          "stringValue": "2026-03-08T18:42:12.716Z"
+        },
+        "idSesion": {
+          "stringValue": ""
+        },
+        "enlaceQRDinamico": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=99000000&v=1"
+        },
+        "empresa": {
+          "stringValue": "FISHER"
+        },
+        "aceptoConsentimiento": {
+          "stringValue": "Si"
+        },
+        "carpetaEmpresa": {
+          "stringValue": ""
+        },
+        "historialVersiones": {
+          "stringValue": ""
+        },
+        "alergias": {
+          "stringValue": "NINGUNA"
+        },
+        "peso": {
+          "stringValue": "88"
+        },
+        "numeroAfiliado": {
+          "stringValue": ""
+        },
+        "versionQR": {
+          "integerValue": "1"
+        },
+        "email": {
+          "stringValue": "nschenardi@gmail.com"
+        },
+        "nombreCompleto": {
+          "stringValue": "LIVIA CARROSO"
+        },
+        "emailUsuario": {
+          "stringValue": ""
+        },
+        "contactoEmergencia": {
+          "stringValue": "NICOLAS SCHENARDI"
+        },
+        "tarjetaPDF": {
+          "stringValue": ""
+        },
+        "enlaceQR": {
+          "stringValue": "https://script.google.com/macros/s/AKfycbyJr_jdjQzY1LdR_9NZAYCUhEJUQOmlm21GOxyXrMqbJabirmWip8xMHPWY7eiXIW0K/exec?dni=99000000&v=1"
+        }
+      },
+      "createTime": "2026-03-08T18:42:02.474524Z",
+      "updateTime": "2026-09-13T23:44:52.976890Z"
+    },
+    {
+      "name": "projects/qr-life-produccion/databases/(default)/documents/empleados/99999997",
+      "fields": {
+        "personId": {
+          "stringValue": "99999997"
+        },
+        "obraSocial": {
+          "stringValue": "Obra Social Ficticia Test"
+        },
+        "qrId": {
+          "stringValue": "c051d01a-1271-4f5c-85b2-5f28456bfd1a"
+        },
+        "discapacidad": {
+          "stringValue": "Ninguna discapacidad (fixture prueba)"
+        },
+        "testFixture": {
+          "booleanValue": true
+        },
+        "alergias": {
+          "stringValue": "Ninguna alergia conocida (fixture prueba)"
+        },
+        "grupoSanguineo": {
+          "stringValue": "A"
+        },
+        "enfermedades": {
+          "stringValue": "Ninguna enfermedad (fixture prueba)"
+        },
+        "telefonoEmergencia": {
+          "stringValue": "+54 299 000-0000"
+        },
+        "peso": {
+          "integerValue": "75"
+        },
+        "factorSanguineo": {
+          "stringValue": "+"
+        },
+        "empresa": {
+          "stringValue": "Organizaci?n E2E Test"
+        },
+        "condicionMedica": {
+          "stringValue": "Ninguna condici?n m?dica (fixture prueba)"
+        },
+        "createdAt": {
+          "stringValue": "2026-09-10T01:58:34.530Z"
+        },
+        "fechaNacimiento": {
+          "stringValue": "1985-06-15"
+        },
+        "cirugias": {
+          "stringValue": "Ninguna cirug?a (fixture prueba)"
+        },
+        "nombreCompleto": {
+          "stringValue": "Usuario Prueba QR Life E2E"
+        },
+        "contactoEmergencia": {
+          "stringValue": "Contacto Ficticio Prueba"
+        },
+        "altura": {
+          "integerValue": "175"
+        },
+        "estado": {
+          "stringValue": "activo"
+        },
+        "email": {
+          "stringValue": "fixture.e2e.test@qrlife.test"
+        },
+        "dni": {
+          "stringValue": "99999997"
+        },
+        "medicacion": {
+          "stringValue": "Ninguna medicaci?n (fixture prueba)"
+        }
+      },
+      "createTime": "2026-09-10T01:58:34.752728Z",
+      "updateTime": "2026-09-13T23:44:53.182338Z"
+    }
+  ]
+}
